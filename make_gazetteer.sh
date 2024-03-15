@@ -1,13 +1,11 @@
 #!/bin/bash
-export CUDA_VISIBLE_DEVICES=0
-
 REPO=$PWD
 
-DATA_DIR=${1:-"$REPO/datasets/"}
-THRESHOLD=${2:-0.75}
-LIMIT=${3:-3}
-LAN=${4:-"en"}
-CORPUS=${5:-"multiconer"}
+DATA_DIR="${REPO}/datasets/"
+THRESHOLD=${1:-0.75}
+LIMIT=${2:-3}
+LAN=${3:-"en"}
+CORPUS=${4:-"multiconer"}
 
 base_dir=${REPO}
 train_file=${DATA_DIR}/${CORPUS}/${CORPUS}
