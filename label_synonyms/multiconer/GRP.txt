@@ -1,0 +1,25 @@
+class
+family
+breed
+style
+grade
+crowd
+band
+company
+party
+gathering
+congregation
+assembly
+troop
+gang
+camp
+minority group
+association
+club
+society
+league
+giuld
+union
+circle
+partnership
+body

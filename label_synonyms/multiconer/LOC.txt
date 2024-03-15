@@ -1,0 +1,127 @@
+location
+position
+place
+site
+locality
+locale
+spot
+point
+placement
+situation
+whereabouts
+scene
+setting
+area
+environtment
+bearings
+orietation
+venue
+address
+locus
+shop
+hospital
+school
+stadium
+swimming pool
+park
+restaurant
+cafe
+library
+museum
+airport
+train station
+bus stop
+office
+bank
+post office
+pharmacy
+beach
+mountain
+forest
+lake
+river
+ocean
+island
+hotel
+apartment
+house
+street
+alley
+plaza
+market
+mall
+cinema
+theater
+gym
+club
+church
+mosque
+temple
+synagogue
+zoo
+amusement park
+playground
+campground
+skatepark
+skating rink
+golf course
+tennis court
+football field
+basketball court
+baseball field
+hockey rink
+volleyball court
+cricket ground
+racetrack
+track
+field
+city
+town
+village
+metropolis
+megalopolis
+capital
+megacity
+suburb
+neighborhood
+district
+county
+region
+state
+province
+territory
+country
+nation
+kingdom
+empire
+continent
+island
+archipelago
+peninsula
+cape
+bay
+harbor
+port
+coast
+shore
+beach
+countryside
+rural area
+farmland
+desert
+jungle
+forest
+mountain
+valley
+plateau
+plain
+tundra
+glacier
+oasis
+cave
+canyon
+hill
+summit
+peak
+slope
+

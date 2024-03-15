@@ -1,0 +1,26 @@
+corporation
+consociation
+company
+firm
+business
+operation
+agency
+office
+bureau
+house
+guild
+institution
+organization
+partnership
+federation
+conglomerate
+consortium
+syndicate
+council
+town council
+municipal authority
+civic authority
+authorities
+Inc.
+incorporated
+corp
