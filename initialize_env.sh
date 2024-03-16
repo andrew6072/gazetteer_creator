@@ -24,6 +24,3 @@ pip install -U $SPACY_PACKAGE || { echo "Failed to upgrade $SPACY_PACKAGE"; exit
 
 # Download the spacy model
 python -m spacy download $SPACY_MODEL || { echo "Failed to download spacy model $SPACY_MODEL"; exit 1; }
-
-# Run the Python script with error handling
-python datasets/process_dataset.py || { echo "Failed to run datasets/process_dataset.py"; exit 1; }
