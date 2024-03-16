@@ -58,78 +58,8 @@ def process_data(path_to_file, name_output_file):
                 writer.write(f"{label} {freq}\n")
 
 
-def convert_data(path_to_data, path_to_output, domain):
-
-    with open(path_to_data, 'r', encoding='utf-8') as f:
-        data = json.load(f)
-
-    documents = data
-    list_fields = []
-    for document in documents:
-        # print(document['text_id'])
-
-        entities = document['entities']
-
-        text = document['text']
-
-        words = word_tokenize(text)
-        
-        labels = ['O'] * len(words)
-        
-        
-
-        # print(text)
-        # print()
-        # print(words)
-        # print("Words len:",len(words))
-        # print("Labels len:",len(labels))
-        # print()
-
-        for no_entity, entity in entities.items():
-            label = entity['MedEntityType']
-            is_first_word_in_span = True
-            for span in entity['spans']:
-                begin_pos, end_pos = get_pos_span(
-                    text, span['begin'], span['end'])
-                # print(no_entity, text[span['begin']:span['end']],
-                #       begin_pos, end_pos, label)
-                for i in range(begin_pos, end_pos+1):
-                    labels[i] = 'I-' + label
-                if is_first_word_in_span:
-                    labels[begin_pos] = 'B-' + label
-                    is_first_word_in_span = False
-
-        fields = list([words, ['_']*len(words), ['_']*len(words), labels])
-        fields = [f'# id {document["text_id"]}\tdomain={domain}'] + [list(field) for field in zip(*fields)]
-        list_fields.append(fields)
-
-        # print()
-
-    with open(path_to_output, 'w', encoding='utf-8') as f:
-        data_str = []
-        for _, fields in enumerate(list_fields):
-            str_fields = []
-            str_fields.append(fields[0])
-            for i in range(1, len(fields)):
-                str_fields.append(' '.join(fields[i]))
-            str_fields = '\n'.join(str_fields)
-            data_str.append(str_fields)
-        data_str = '\n\n'.join(data_str)
-        f.write(data_str)
-
-
 if __name__ == '__main__':
     sg = parse_args()
-    # with open('/home/andrew6072/Downloads/dataset/RDRS-main/data/interim/4/valid.json', 'r', encoding='utf-8') as f:
-    #     data = json.load(f)
-    #     sample_dict = None
-    #     for item in data:
-    #         if item.get('text_id') == '1426094':
-    #             sample_dict = item
-    #             break
-    #     if sample_dict != None:
-    #         print(sample_dict.get("text"))
-    #         print(process_1document(sample_dict, {}))
     process_data(sg.file, "rdrs")
 
 

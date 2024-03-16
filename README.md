@@ -9,7 +9,9 @@ Run: `bash initialize_env.sh` then open new terminal
 
 ### Process the dataset (MultiCoNER, ViMQ, RDRS)
 `process_multiconer.py --file <path to multiconer training file>`
+
 `process_vimq.py --file <path to vimq training file>`
+
 `process_rdrs.py --file <path to rdrs training file>`
 
 ### Run the Gazetteer Creation Script After initializing environment:
