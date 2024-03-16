@@ -3,6 +3,8 @@ import argparse
 from nltk.tokenize import word_tokenize
 from utils import parse_args
 import os
+from typing import Dict, List
+
 
 def get_pos_span(text: str, begin: int, end: int) -> tuple:
     """
@@ -23,37 +25,64 @@ def get_pos_span(text: str, begin: int, end: int) -> tuple:
     end_pos = begin_pos + len(word_tokenize(span)) - 1
     return begin_pos, end_pos
 
-def process_1document(document, freq_label):
+def process_1document(document: dict, freq_label: dict) -> list:
+    """
+    Extracts entities from a document and updates the frequency label dictionary.
+    
+    Args:
+        document (dict): A dictionary representing a document.
+        freq_label (dict): A dictionary to store the frequency of each label.
+        
+    Returns:
+        list: A list of extracted entities, where each entity is a string consisting of the words and the label.
+    """
     list_of_entities = []
-    entities_dict = document['entities']
-    text = document['text']
+    entities_dict = document.get('entities', {})
+    text = document.get('text', '')
     words = word_tokenize(text)
-    for _, entity_dict in entities_dict.items():
-        label = entity_dict.get('MedEntityType', "")
-        if len(label) <= 0:
+    
+    for entity_dict in entities_dict.values():
+        label = entity_dict.get('MedEntityType', '')
+        if not label:
             continue
+        
         entity = []
-        for span in entity_dict.get("spans", []):
+        for span in entity_dict.get('spans', []):
             begin_pos, end_pos = get_pos_span(text, span['begin'], span['end'])
-            entity.extend(words[begin_pos : end_pos + 1])
-        list_of_entities.append(' '.join(entity) + f" {label}")
+            entity.extend(words[begin_pos: end_pos + 1])
+        
+        entity_with_label = ' '.join(entity) + f" {label}"
+        list_of_entities.append(entity_with_label)
         freq_label[label] = freq_label.get(label, 0) + 1
+    
     return list_of_entities
 
 
-def process_data(path_to_file, name_output_file):
-    freq_labels = {}
+def process_data(path_to_file: str, name_output_file: str) -> None:
+    """
+    Reads a JSON file, processes each document in the file using the `process_1document` function,
+    and writes the extracted entities to an output file. It also calculates the frequency of each label
+    and writes it to a separate frequency file.
+
+    Args:
+        path_to_file: The path to the input JSON file.
+        name_output_file: The name of the output file.
+
+    Returns:
+        None
+    """
+    freq_labels: Dict[str, int] = {}
     output_dir = os.path.join(os.getcwd(), 'datasets/rdrs/')
     os.makedirs(output_dir, exist_ok=True)
 
     with open(path_to_file, 'r', encoding='utf-8') as reader:
-        with open(output_dir+name_output_file, 'w', encoding='utf-8') as writer:
+        with open(os.path.join(output_dir, name_output_file), 'w', encoding='utf-8') as writer:
             data = json.load(reader)
             for document in data:
                 entities = process_1document(document, freq_labels)
                 for entity in entities:
                     writer.write(f"{entity}\n")
-        with open(f"{output_dir}{name_output_file}_frequency.txt", 'w', encoding='utf-8') as writer:
+        with open(os.path.join(output_dir, f"{name_output_file}_frequency.txt"), 'w', encoding='utf-8') as writer:
             for label, freq in freq_labels.items():
                 writer.write(f"{label} {freq}\n")
 
