@@ -1,10 +1,15 @@
 from search_wiki_data import *
+from datasets.process_multiconer import _is_divider
 import spacy
 import os
 from typing import List, Dict
 from spacy.tokens import Doc
 import time
 from utils import parse_args
+from tqdm import tqdm
+import json
+import re
+
 
 def get_label_synonyms2vecs(model: spacy.Language, directory_path: str) -> Dict[str, List[Doc]]:
     """
@@ -92,6 +97,59 @@ def add_entity_to_gazetteer(model: spacy.Language, entity: str, true_tag: str, t
     return entity_added_to_true_tag_gazetteer
 
 
+def dataset2NERdict(path_to_train_data: str, limit: int, lang: str) -> None:
+    """
+    Process a training dataset and return a dictionary containing the results.
+    It creates 2 json files: `{dataset_name}_ners_dict.json` and `{dataset_name}_ners_dict.json`
+    in directory `datasets/{dataset_name}/`
+
+    Args:
+        path_to_train_data (str): The path to the training dataset file.
+        limit (int): The limit value for the number of topics to retrieve.
+        lang (str): The language for the search.
+
+    Returns:
+        results (Dict[str, Dict]): A dictionary containing the results of the dataset processing.
+            The keys are entities, and the values are dictionaries containing the 'txt_id_list',
+            'wiki_topics', and 'tag' for each entity.
+    """
+    results = {}
+    docs_dict = {}
+    with open(path_to_train_data, 'r', encoding='utf-8') as fin:
+        entity_counter = 0
+        sleep_time = 300
+        if not os.path.isfile(path_to_train_data):
+            raise FileNotFoundError(f"The specified training data file was not found: {path_to_train_data}")
+        name_dataset = os.path.basename(path_to_train_data)
+        lines = [line.strip().replace('\u200d', '').replace('\u200c', '').replace('\u200b', '') for line in fin if not _is_divider(line)]
+        for line in tqdm(lines, desc=f"Creating NER dict for dataset {name_dataset}"):
+            if line.startswith('# id'):
+                doc_id = line.split()[-1]
+                continue
+            tag = line.split()[-1]
+            entity = ' '.join(line.split()[:-1])
+
+            docs_dict.setdefault(doc_id, [])
+            docs_dict[doc_id].append(entity)
+
+            if entity not in results or doc_id not in results[entity]['txt_id_list']:
+                wiki_topics = get_topics_from_wkdt_search_tool(url, api_url, entity, lang, limit)
+                results.setdefault(entity, {'txt_id_list': [], 'wiki_topics': wiki_topics, 'tag': tag})
+                results[entity]['txt_id_list'].append(doc_id)
+                entity_counter += 1
+                if entity_counter % 1000 == 0:
+                    print(f"Sleep for {sleep_time}!\n")
+                    time.sleep(sleep_time)
+    
+    output_dir = f"datasets/{name_dataset}/"
+    os.makedirs(output_dir, exist_ok=True)
+    results_file_path = os.path.join(output_dir, f"{name_dataset}_ners_dict.json")
+    docs_dict_file_path = os.path.join(output_dir, f"{name_dataset}_docs_dict.json")
+    with open(results_file_path, 'w', encoding='utf-8') as f, open(docs_dict_file_path, 'w', encoding='utf-8') as f_docs:
+        json.dump(results, f, ensure_ascii=False, indent=4)
+        json.dump(docs_dict, f_docs, ensure_ascii=False, indent=4)
+
+
 def make_gazetteer(model: spacy.language.Language, path_to_train_data: str, threshold: float, limit: int, lang: str) -> None:
     """
     Creates a gazetteer by extracting topics from a given dataset and adding entities to corresponding gazetteer files.
@@ -108,60 +166,73 @@ def make_gazetteer(model: spacy.language.Language, path_to_train_data: str, thre
     """
     # Extract the name of the dataset from the path
     name_dataset = os.path.basename(path_to_train_data)
+    name_dataset_without_digit = re.sub(r'\d+', '', name_dataset)
 
-    # Extract the name of the dataset from the path
-    dataset_name = os.path.basename(path_to_train_data)
+    with open(os.path.join(f"datasets/{name_dataset_without_digit}", f"{name_dataset_without_digit}_ners_dict.json"), 'r', encoding='utf-8') as ners_file:
+        ners_dict = json.load(ners_file)
+    
+    with open(os.path.join(f"datasets/{name_dataset_without_digit}", f"{name_dataset_without_digit}_docs_dict.json"), 'r', encoding='utf-8') as docs_file:
+        docs_dict = json.load(docs_file)
+
 
     # List all directories inside the 'label_synonyms/' directory
-    label_synonyms_directories = [name for name in os.listdir('label_synonyms/') if os.path.isdir(os.path.join('label_synonyms/', name))]
-
-    # Check if the dataset name matches any of the directories inside 'label_synonyms/'
-    if dataset_name not in label_synonyms_directories:
+    label_synonyms_directories = {name for name in os.listdir('label_synonyms/') if os.path.isdir(os.path.join('label_synonyms/', name))}
+    if name_dataset_without_digit not in label_synonyms_directories:
         raise ValueError("The filename of `path_to_train_data` must match one of the names of directories inside the `label_synonyms/` directory.")
 
-    print(name_dataset)
-    directory_path = f"gazetteers/gzt_{name_dataset}_thr_{str(threshold).replace('.', '_')}_lim_{limit}"
+    print("Processing:", name_dataset)
+    gzt_path = f"gazetteers/gzt_{name_dataset}_thr_{threshold:.2f}_lim_{limit}".replace('.', '_')
     
-    label_doc_dict = get_label_synonyms2vecs(model, f"label_synonyms/{name_dataset}")
+    label_doc_dict = get_label_synonyms2vecs(model, f"label_synonyms/{name_dataset_without_digit}")
+    os.makedirs(gzt_path, exist_ok=True)
 
-    os.makedirs(directory_path, exist_ok=True)
-    with open(path_to_train_data, 'r', encoding='utf-8') as file:
-        freq_entity_true_label = {}
-        lines = file.readlines()
-        num_lines = len(lines)
-        xth_word = 1
-        entites = [' '.join(line.strip().split()[:-1]) for line in lines]
-        tags = [line.strip().split()[-1] for line in lines]
+    freq_entity_true_label = {}
+    processed_entites = {}
 
-        average_time_on_1_entity = 0
-        for i, entity in enumerate(entites):
-            start_time = time.time()
+    # START
+    with open(path_to_train_data, 'r', encoding='utf-8') as fin:
+        train_ids = [line.strip().replace('\u200d', '').replace('\u200c', '').replace('\u200b', '').split()[-1] for line in fin if not _is_divider(line) and line.startswith('# id')]
+        for doc_id in tqdm(train_ids, desc="Mapping entities to gazetteer"):
+            entities = docs_dict.get(doc_id, [])
+            uniq_ents = set(entities)
+            for entity in uniq_ents:
+                if entity in processed_entites:
+                    continue
+                processed_entites[entity] = True
+                true_tag = ners_dict.get(entity, {}).get('tag', '')
+                if len(true_tag) == 0:
+                    continue
+                topics = ners_dict.get(entity, {}).get('wiki_topics', {})
+                if add_entity_to_gazetteer(model, entity, true_tag, topics, label_doc_dict, threshold, gzt_path):
+                    freq_entity_true_label[true_tag] = freq_entity_true_label.get(true_tag, 0) + 1
+    # END
 
-            # first search for related topics of the entity
-            # then add the entity to a gazetteer if the similarity of 1 of its topics to that gazetteer
-            # is greater then threshold 
-            true_label = tags[i]
-            topics = get_topics_from_wkdt_search_tool(url, api_url, entity, lang, limit)
-            if (add_entity_to_gazetteer(model, entity, true_label, topics, label_doc_dict, threshold, directory_path)):
-                freq_entity_true_label[true_label] = freq_entity_true_label.get(true_label, 0) + 1
-            
-            end_time = time.time()
-            average_time_on_1_entity += end_time-start_time
-            print(f"Done {xth_word}/{num_lines} in {end_time-start_time:.2f}s")
-            xth_word += 1
-        print('Average time for adding 1 entity to gzetteer:', average_time_on_1_entity/num_lines)
 
-        with open(directory_path + "/coverage.txt", 'w', encoding='utf-8') as file:
-            for key, value in freq_entity_true_label.items():
-                file.write(f"{key} {value}\n")
-
+    # for entity, info in NERdict.items():
+    #     true_tag = info.get('tag')
+    #     topics = info.get('wiki_topics')
         
+    #     if add_entity_to_gazetteer(model, entity, true_tag, topics, label_doc_dict, threshold, gzt_path):
+    #         freq_entity_true_label[true_tag] = freq_entity_true_label.get(true_tag, 0) + 1
+
+    with open(gzt_path + "/coverage.txt", 'w', encoding='utf-8') as file:
+        for key, value in freq_entity_true_label.items():
+            file.write(f"{key} {value}\n")
+
 
 
 if __name__ == "__main__":
     model = spacy.load("en_core_web_lg")
     sg = parse_args()
-    make_gazetteer(model=model, path_to_train_data=sg.data, threshold=sg.threshold, limit=sg.limit, lang=sg.lang)
+    # dataset2NERdict() requires internent connection
+    dataset2NERdict(path_to_train_data=sg.data, limit=sg.limit, lang=sg.lang)
+
+    if os.path.basename(sg.data) != 'rdrs':
+        # make_gazetteer() does not require internent connection
+        make_gazetteer(model=model, path_to_train_data=sg.data, threshold=sg.threshold, limit=sg.limit, lang=sg.lang)
+    else:
+        for i in range(1, 6):
+            make_gazetteer(model=model, path_to_train_data=f"{sg.data}{i}", threshold=sg.threshold, limit=sg.limit, lang=sg.lang)
 
 
 

@@ -3,6 +3,7 @@ import itertools
 from typing import Generator, List, Optional, Tuple
 import os
 from utils import parse_args
+from tqdm import tqdm
 
 def _is_divider(line: str) -> bool:
     """
@@ -45,7 +46,9 @@ def get_ner_multiconer_dataset(path_to_data: str) -> None:
     os.makedirs(output_dir, exist_ok=True)
 
     with open(output_dir + 'multiconer', 'w', encoding='utf-8') as file:
-        for fields, metadata in get_ner_reader(path_to_data):
+        for fields, metadata in tqdm(get_ner_reader(path_to_data), desc="Processing MultiCoNER"):
+            metadata = ' '.join(metadata.split()[:-1])
+            file.write(f"{metadata}\n")
             words = []
             for i, tag in enumerate(fields[1]):
                 prefix, suffix = tag.split('-')
@@ -54,6 +57,7 @@ def get_ner_multiconer_dataset(path_to_data: str) -> None:
                     file.write(' '.join(words) + f' {suffix}' + '\n')
                     words = []
                     freq_labels[suffix] = freq_labels.get(suffix, 0) + 1
+            file.write("\n")
 
     with open(output_dir + '/frequency.txt', 'w', encoding='utf-8') as file:
         for key, value in freq_labels.items():

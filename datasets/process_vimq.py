@@ -2,6 +2,8 @@ from utils import parse_args
 import json
 import os
 from typing import List, Dict
+import uuid
+from tqdm import tqdm
 
 
 def process_vimq(path_to_file: str) -> None:
@@ -24,15 +26,18 @@ def process_vimq(path_to_file: str) -> None:
         data = json.load(reader)
 
         with open(os.path.join(output_dir, "vimq"), 'w', encoding='utf-8') as writer:
-            for d in data:
+            for d in tqdm(data, desc="Processing ViMQ"):
                 sentence = d.get("sentence", "").strip().split()
                 seq_labels = d.get("seq_label", [])
+                id4 = uuid.uuid4()
+                writer.write(f"# id {id4}\n")
 
                 for label in seq_labels:
                     start_idx, end_idx, tag = label
                     entity = ' '.join(sentence[start_idx:end_idx+1])
                     writer.write(f"{entity} {tag}\n")
                     freq_labels[tag] = freq_labels.get(tag, 0) + 1
+                writer.write('\n')
 
         with open(os.path.join(output_dir, "frequency.txt"), 'w', encoding='utf-8') as writer:
             for tag, count in freq_labels.items():
@@ -41,3 +46,7 @@ def process_vimq(path_to_file: str) -> None:
 if __name__ == "__main__":
     sg = parse_args()
     process_vimq(sg.file)
+
+        
+        
+        

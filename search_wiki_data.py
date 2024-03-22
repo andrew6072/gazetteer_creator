@@ -99,9 +99,9 @@ def get_topics_from_wkdt_search_tool(url: str, api_url: str, query: str, lang: s
                     if topic not in wikidata_topics:
                         wikidata_topics[topic] = entity_id
             return wikidata_topics 
-        else:
-            logging.error(f"Failed to retrieve data for query \"{query}\". Status code: {response.status_code}")
-            return wikidata_topics
+
+        logging.error(f"Failed to retrieve data for query \"{query}\". Status code: {response.status_code}")
+        return wikidata_topics
 
     except requests.exceptions.RequestException as e:
         logging.error(f"Request failed: {e}")
