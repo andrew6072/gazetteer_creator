@@ -16,3 +16,8 @@ Run: `bash initialize_env.sh` then open new terminal
 
 ### Run the Gazetteer Creation Script After initializing environment:
 `bash make_gazetteer.sh <threshold> <limit> <lang> <dataset>`
+Where:
+`threshold` is threshold for similarity check between wikidata topic and synonyms of labels
+`limit` is number of pages returned by Wikidata search tool
+`lang` is languange of pages return by Wikidata search tool
+`dataset` can be either `vimq` / `multiconer` / `rdrs`
