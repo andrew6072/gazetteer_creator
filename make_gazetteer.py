@@ -9,6 +9,9 @@ from utils import parse_args
 from tqdm import tqdm
 import json
 import re
+import logging
+
+logging.basicConfig(filename='dataset_processing_errors.log', level=logging.ERROR, format='%(asctime)s:%(levelname)s:%(message)s')
 
 
 def get_label_synonyms2vecs(model: spacy.Language, directory_path: str) -> Dict[str, List[Doc]]:
@@ -100,7 +103,7 @@ def add_entity_to_gazetteer(model: spacy.Language, entity: str, true_tag: str, t
 def dataset2NERdict(path_to_train_data: str, limit: int, lang: str) -> None:
     """
     Process a training dataset and return a dictionary containing the results.
-    It creates 2 json files: `{dataset_name}_ners_dict.json` and `{dataset_name}_ners_dict.json`
+    It creates 2 json files: `{dataset_name}_ners_dict.json` and `{dataset_name}_docs_dict.json`
     in directory `datasets/{dataset_name}/`
 
     Args:
@@ -113,38 +116,70 @@ def dataset2NERdict(path_to_train_data: str, limit: int, lang: str) -> None:
             The keys are entities, and the values are dictionaries containing the 'txt_id_list',
             'wiki_topics', and 'tag' for each entity.
     """
-    results = {}
-    docs_dict = {}
-    with open(path_to_train_data, 'r', encoding='utf-8') as fin:
-        entity_counter = 0
-        sleep_time = 300
-        if not os.path.isfile(path_to_train_data):
-            raise FileNotFoundError(f"The specified training data file was not found: {path_to_train_data}")
-        name_dataset = os.path.basename(path_to_train_data)
-        lines = [line.strip().replace('\u200d', '').replace('\u200c', '').replace('\u200b', '') for line in fin if not _is_divider(line)]
-        for line in tqdm(lines, desc=f"Creating NER dict for dataset {name_dataset}"):
-            if line.startswith('# id'):
-                doc_id = line.split()[-1]
-                continue
-            tag = line.split()[-1]
-            entity = ' '.join(line.split()[:-1])
+    try:
+        with open(path_to_train_data, 'r', encoding='utf-8') as fin:
+            results = {}
+            docs_dict = {}
+            sleep_time = 300
+            if not os.path.isfile(path_to_train_data):
+                raise FileNotFoundError(f"The specified training data file was not found: {path_to_train_data}")
+            name_dataset = os.path.basename(path_to_train_data)
 
-            docs_dict.setdefault(doc_id, [])
-            docs_dict[doc_id].append(entity)
+            output_dir = f"datasets/{name_dataset}/"
+            os.makedirs(output_dir, exist_ok=True)
+            results_file_path = os.path.join(output_dir, f"{name_dataset}_ners_dict.json")
+            docs_dict_file_path = os.path.join(output_dir, f"{name_dataset}_docs_dict.json")
 
-            if entity not in results or doc_id not in results[entity]['txt_id_list']:
-                wiki_topics = get_topics_from_wkdt_search_tool(url, api_url, entity, lang, limit)
-                results.setdefault(entity, {'txt_id_list': [], 'wiki_topics': wiki_topics, 'tag': tag})
-                results[entity]['txt_id_list'].append(doc_id)
-                entity_counter += 1
-                if entity_counter % 1000 == 0:
-                    print(f"Sleep for {sleep_time}!\n")
-                    time.sleep(sleep_time)
-    
-    output_dir = f"datasets/{name_dataset}/"
-    os.makedirs(output_dir, exist_ok=True)
-    results_file_path = os.path.join(output_dir, f"{name_dataset}_ners_dict.json")
-    docs_dict_file_path = os.path.join(output_dir, f"{name_dataset}_docs_dict.json")
+            #lines = [line.strip().replace('\u200d', '').replace('\u200c', '').replace('\u200b', '') for line in fin if not _is_divider(line)]
+            
+            entity_counter = 1
+            total_lines = sum(1 for _ in fin)
+            fin.seek(0)
+            for line in tqdm(fin, desc=f"Creating NER dict for dataset {name_dataset}", total=total_lines):
+                line = line.strip().replace('\u200d', '').replace('\u200c', '').replace('\u200b', '')
+                if _is_divider(line):
+                    continue
+                if line.startswith('# id'):
+                    doc_id = line.split()[-1]
+                    continue
+                tag = line.split()[-1]
+                entity = ' '.join(line.split()[:-1])
+
+                docs_dict.setdefault(doc_id, [])
+                docs_dict[doc_id].append(entity)
+
+                if entity not in results or doc_id not in results[entity]['txt_id_list']:
+                    wiki_topics = get_topics_from_wkdt_search_tool(url, api_url, entity, lang, limit)
+                    results.setdefault(entity, {'txt_id_list': [], 'wiki_topics': wiki_topics, 'tag': tag})
+                    results[entity]['txt_id_list'].append(doc_id)
+                    if entity_counter % 1000 == 0:
+                        entity_counter += 1
+                        print(f"Sleep for {sleep_time}!\n")
+                        time.sleep(sleep_time)
+                # write results to file every 100 entities to advoid data loss in case the program crashed
+                if entity_counter % 100 == 0:
+                    _write_results_to_file(results_file_path, docs_dict_file_path, results, docs_dict)
+            if entity_counter % 100 != 0:  # This check ensures we only write if there's data that hasn't been written yet
+                _write_results_to_file(results_file_path, docs_dict_file_path, results, docs_dict)
+    except FileNotFoundError as e:
+        logging.exception("File not found: %s", e)
+    except Exception as e:
+        logging.exception("Unexpected error: %s", e)
+
+
+def _write_results_to_file(results_file_path: str, docs_dict_file_path: str, results: Dict, docs_dict: Dict) -> None:
+    """
+    Write the results and docs_dict dictionaries to the corresponding JSON files.
+
+    Args:
+        results_file_path (str): The file path for the results JSON file.
+        docs_dict_file_path (str): The file path for the docs_dict JSON file.
+        results (Dict): The results dictionary.
+        docs_dict (Dict): The docs_dict dictionary.
+
+    Returns:
+        None
+    """
     with open(results_file_path, 'w', encoding='utf-8') as f, open(docs_dict_file_path, 'w', encoding='utf-8') as f_docs:
         json.dump(results, f, ensure_ascii=False, indent=4)
         json.dump(docs_dict, f_docs, ensure_ascii=False, indent=4)
@@ -192,7 +227,7 @@ def make_gazetteer(model: spacy.language.Language, path_to_train_data: str, thre
     # START
     with open(path_to_train_data, 'r', encoding='utf-8') as fin:
         train_ids = [line.strip().replace('\u200d', '').replace('\u200c', '').replace('\u200b', '').split()[-1] for line in fin if not _is_divider(line) and line.startswith('# id')]
-        for doc_id in tqdm(train_ids, desc="Mapping entities to gazetteer"):
+        for doc_id in tqdm(train_ids, total=len(train_ids), desc="Mapping entities to gazetteer"):
             entities = docs_dict.get(doc_id, [])
             uniq_ents = set(entities)
             for entity in uniq_ents:
@@ -205,15 +240,6 @@ def make_gazetteer(model: spacy.language.Language, path_to_train_data: str, thre
                 topics = ners_dict.get(entity, {}).get('wiki_topics', {})
                 if add_entity_to_gazetteer(model, entity, true_tag, topics, label_doc_dict, threshold, gzt_path):
                     freq_entity_true_label[true_tag] = freq_entity_true_label.get(true_tag, 0) + 1
-    # END
-
-
-    # for entity, info in NERdict.items():
-    #     true_tag = info.get('tag')
-    #     topics = info.get('wiki_topics')
-        
-    #     if add_entity_to_gazetteer(model, entity, true_tag, topics, label_doc_dict, threshold, gzt_path):
-    #         freq_entity_true_label[true_tag] = freq_entity_true_label.get(true_tag, 0) + 1
 
     with open(gzt_path + "/coverage.txt", 'w', encoding='utf-8') as file:
         for key, value in freq_entity_true_label.items():
