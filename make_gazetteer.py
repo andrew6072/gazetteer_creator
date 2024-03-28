@@ -86,6 +86,8 @@ def add_entity_to_gazetteer(model: spacy.Language, entity: str, true_tag: str, t
                         if similarity > max_similarity:
                             max_similarity = similarity
                             most_related_doc = doc
+                        if max_similarity == 1:
+                            break
 
             # add this entity to gazetteer <label>.txt
             if not added_labels[label] and max_similarity >= threshold:
@@ -226,8 +228,12 @@ def make_gazetteer(model: spacy.language.Language, path_to_train_data: str, thre
 
     # START
     with open(path_to_train_data, 'r', encoding='utf-8') as fin:
-        train_ids = [line.strip().replace('\u200d', '').replace('\u200c', '').replace('\u200b', '').split()[-1] for line in fin if not _is_divider(line) and line.startswith('# id')]
-        for doc_id in tqdm(train_ids, total=len(train_ids), desc="Mapping entities to gazetteer"):
+        total_lines = sum(1 for _ in fin)
+        fin.seek(0)
+        for line in tqdm(fin, desc="Mapping entities to gazetteer", total=total_lines):
+            if _is_divider(line) or not line.startswith("# id"):
+                continue
+            doc_id = line.strip().replace('\u200d', '').replace('\u200c', '').replace('\u200b', '').split()[-1]
             entities = docs_dict.get(doc_id, [])
             uniq_ents = set(entities)
             for entity in uniq_ents:
