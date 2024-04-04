@@ -1,67 +1,24 @@
-class of disease
-symptom or sign
-disease
-sign
-symptom
-disorder
-clinical sign
-cause of death
 infectious disease
-infectious
-biological process
-biological
-process
-failure mode
-failure
-human pregnancy
-pain
-ailment
-malady
-problem
-sickness
-affection
-complaint
-complex
-diagnostics
-infirmity
-prognostics
-bug
-Cancer
-condition
-contamination
-defect
+class of disease
+disease
+symptom or sign
+clinical sign
+medical finding
+health problem
+rare disease
+cause of death
+syndrome
+symptom
+disability
+infection
+risk factor
+anxiety disorder
+sexually transmitted infection
+dysfunction
 epidemic
 fever
 flu
 illness
-infection
-inflammation
-plague
-stroke
-syndrome
-ache
-attack
-blight
-breakdown
-canker
-collapse
-contagion
-convulsions
-debility
-decrepitude
-distemper
-endemic
-feebleness
-fit
-hemorrhage
-indisposition
-infirmity
-misery
-seizure
-spell
-temperature
-unhealthiness
-unsoundness
-upset
-visitation
 complications of pregnancy
+failure mode
+failure

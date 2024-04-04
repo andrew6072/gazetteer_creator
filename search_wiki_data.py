@@ -29,11 +29,11 @@ def get_instances_by_property_P31(api_url: str, page_id: str, lang: str) -> Gene
     claims = page_response.json().get("entities", {}).get(page_id, {}).get("claims", {})
     list_of_topics = []
     
-    if "P279" in claims:
-        list_of_topics = claims["P279"]
-    
     if "P31" in claims:
-        list_of_topics.extend(claims["P31"])
+        list_of_topics = claims["P31"]
+    
+    if "P279" in claims:
+        list_of_topics.extend(claims["P279"])
         
     for topic in list_of_topics:
         entity_id = topic.get("mainsnak", {}).get("datavalue", {}).get("value", {}).get("id")

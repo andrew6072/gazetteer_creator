@@ -105,6 +105,12 @@ def add_entity_to_gazetteer(model: spacy.Language, entity: str, true_tag: str, t
 def dataset2NERdict(path_to_train_data: str, limit: int, lang: str) -> None:
     """
     Process a training dataset and return a dictionary containing the results.
+    results = {
+        'NER':{
+            'text_id_list':[id1, id2, id3, ...],
+            'wiki_topics': {topic : wikidata_code}
+        }
+    }
     It creates 2 json files: `{dataset_name}_ners_dict.json` and `{dataset_name}_docs_dict.json`
     in directory `datasets/{dataset_name}/`
 
@@ -134,7 +140,7 @@ def dataset2NERdict(path_to_train_data: str, limit: int, lang: str) -> None:
 
             #lines = [line.strip().replace('\u200d', '').replace('\u200c', '').replace('\u200b', '') for line in fin if not _is_divider(line)]
             
-            entity_counter = 1
+            entity_counter = 0
             total_lines = sum(1 for _ in fin)
             fin.seek(0)
             for line in tqdm(fin, desc=f"Creating NER dict for dataset {name_dataset}", total=total_lines):
@@ -144,18 +150,19 @@ def dataset2NERdict(path_to_train_data: str, limit: int, lang: str) -> None:
                 if line.startswith('# id'):
                     doc_id = line.split()[-1]
                     continue
+                entity_counter += 1
+
                 tag = line.split()[-1]
                 entity = ' '.join(line.split()[:-1])
 
                 docs_dict.setdefault(doc_id, [])
                 docs_dict[doc_id].append(entity)
 
-                if entity not in results or doc_id not in results[entity]['txt_id_list']:
+                if (entity not in results) or (doc_id not in results[entity]['txt_id_list']):
                     wiki_topics = get_topics_from_wkdt_search_tool(url, api_url, entity, lang, limit)
                     results.setdefault(entity, {'txt_id_list': [], 'wiki_topics': wiki_topics, 'tag': tag})
                     results[entity]['txt_id_list'].append(doc_id)
                     if entity_counter % 1000 == 0:
-                        entity_counter += 1
                         print(f"Sleep for {sleep_time}!\n")
                         time.sleep(sleep_time)
                 # write results to file every 100 entities to advoid data loss in case the program crashed

@@ -1,43 +1,18 @@
 medicine
-antibiotic
-cure
 drug
 essential medicine
 medication
 pharmaceutical
-pill
-prescription
-remedy
-anesthetic
-antidote
-antiseptic
-antitoxin
-balm
-capsule
-dose
-elixir
-injection
-inoculation
-liniment
-lotion
-medicament
-ointment
-physic
-potion
-salve
-sedative
-serum
-tablet
-tincture
-tonic
 vaccination
 vaccine
-biologic
-pharmacon
 biopharmaceutical
 contraception
-type of chemical entity
-class of chemical substances by use
-chemical substance
 pharmaceutical product
-structural class of chemical entities
+oral contraceptive
+contraceptive
+female contraceptive agent
+vitamin
+COVID-19 vaccine
+traditional medicine
+traditional Asian medicine
+dietary supplement

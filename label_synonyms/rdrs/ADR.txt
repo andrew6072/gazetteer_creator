@@ -1,0 +1,30 @@
+symptom
+symptom or sign
+sign
+class of disease
+clinical sign
+digestive sign
+biological process
+sleep disorder
+food allergy
+sleep disturbance
+feces and droppings symptom
+immunoglobulin mediated immune response
+neurological disorder
+hypersensitivity
+skin and integumentary tissue symptom
+gastrointestinal system disease
+health problem
+medical finding
+genetic disease
+pain
+drug allergy
+stomach disease
+neurological and physiological symptom
+sensation disorder
+psychopathological symptom
+syndrome
+general symptom
+unpleasantness
+suffering
+medically unexplained physical symptom

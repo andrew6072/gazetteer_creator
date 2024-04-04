@@ -1,67 +1,159 @@
+disease
 class of disease
 symptom or sign
-disease
-sign
-symptom
-disorder
 clinical sign
-cause of death
+symptom
 infectious disease
-infectious
-biological process
-biological
-process
-failure mode
-failure
-human pregnancy
+gastrointestinal system disease
 pain
-ailment
-malady
-problem
-sickness
-affection
-complaint
-complex
-diagnostics
-infirmity
-prognostics
-bug
-Cancer
-condition
-contamination
-defect
-epidemic
-fever
-flu
-illness
-infection
-inflammation
-plague
-stroke
+lung disease
+abnormal breathing
+feces and droppings symptom
+headache
+biological process
+rare disease
 syndrome
-ache
-attack
-blight
-breakdown
-canker
-collapse
-contagion
-convulsions
-debility
-decrepitude
-distemper
-endemic
-feebleness
-fit
-hemorrhage
-indisposition
-infirmity
-misery
-seizure
-spell
-temperature
-unhealthiness
-unsoundness
-upset
-visitation
+menstrual disorder
+pelvic pain
+abdominal symptom
+nose symptom
+sleep disorder
+inflammatory disease
+stomach disease
+throat symptom
+skin infection
+health problem
+genetic disease
+esophageal disease
+encephalopathy
+neurological and physiological symptom
+mental disorder
+sexually transmitted infection
+nausea
+adverse reactions to anesthesia
+postoperative complications
+pandemic
+skin disease
+skin and integumentary tissue symptom
+endemic disease
+medical finding
+vomiting
+pneumonia
+physiological condition
+neurological symptom
+constipation
+bowel dysfunction
+varicella zoster infection
+cause of death
+peripheral neuropathy
+head and neck disease
+eye disease
+Herpesviridae infectious disease
+ear symptom
+reproductive system symptom
+hypoglycemia
+eating disorder
+thyroid gland disease
+chest pain
+vaginal disease
+pharyngeal diseases
+abdominal distention
+vascular disease
+autosomal recessive disease
+hemoglobinopathy
+hemolytic anemia
+pain in babies
+bacterial infectious disease
+bleeding
+intestinal disease
+infection
+nasal discharge
+mental depression
+negative emotion
+hearing disorder
+coxsackievirus infectious disease
+inflammation
+artery disease
+general symptom
+middle ear disease
+kidney disease
+penile disease
+female reproductive system disease
+cervix disease
+colonic disease
+nutrition, metabolism, and development symptom
+arenavirus hemorrhagic fever
+puerperal disorders
+flavivirus infectious disease
+hypertension
+urological symptom
+duodenal disease
+anal disease
+mental disorder complicating pregnancy, childbirth, or the puerperium
+endogenous depression
+mood disorder
+parotitis
+mumps virus infectious disease
+salivary gland disease
+coronavirus disease
+viral pneumonia
+respiratory allergy
+pancreatitis
+cognitive disorder
+intracranial hemorrhage
+stroke
+bacterial meningitis
+Haemophilus influenzae infectious disease
+urolithiasis
+decreased appetite
+cardiovascular disease
+cardiovascular system symptom
+vein disorder
+back pain
+discomfort
+intestinal infectious disease
+prostate disease
 complications of pregnancy
+infectious disease with epilepsy
+vaginal bleeding
+sweat gland disease
+diabetes
+endocrine system disease
+primary bacterial infectious disease
+organic brain syndrome
+neglected tropical disease
+functional gastric disease
+urinary system disease
+vision disorder
+psychosexual disorder
+eye inflammation
+eye symptom
+impaired renal function disease
+large intestine cancer
+viral sexually transmitted disease
+diverticular disease
+stress
+tuberculosis
+synucleinopathy
+neurological disorder
+liver disease
+heart failure
+neuromuscular disease
+Polio-like syndrome
+type 2 diabetes
+ketoacidosis
+general infection
+systemic disease
+external risk
+breast cancer
+male breast neoplasm
+stomatitis
+uterine disease
+urethral disease
+uterine cancer
+rare genetic hepatic disease
+syndromic lymphedema
+rare genetic immune disease
+heart disease
+respiratory disease
+uterine cervix neoplasm

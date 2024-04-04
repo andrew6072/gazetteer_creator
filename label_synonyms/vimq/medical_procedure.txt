@@ -4,31 +4,40 @@ therapy
 surgical operation
 surgical procedure
 surgical process
-medical specialty
 clinical sciences
-medical test type
-diet
-healing
-therapeutics
-analysis
-cure
-hospitalization
 operation
-prescription
-regimen
-remedy
-preventive medicine
-active immunotherapy
 medical test
 replacement therapy
 medical imaging
 transplantation
-ablation
 removal
-route of administration
 medical treatment
 medical ultrasonography
 diagnosis
 medical examination
 health assessment
-assisted reproductive technology
+plastic surgery
+drug testing
+molecular biology technique
+immunologic test
+medical test type
+laboratory diagnostics
+stem cell transplantation
+bone marrow transplantation
+periodic health examination
+ectomy
+intraepithelial neoplasia
+radiography
+endoscopy
+roentgenology
+orthopedic procedures
+lymphatic ectomy
+treatment of cancer
+organ transplantation
+digestive endoscopy
+local anesthetic
+medical ultrasonography
+health assessment
+medical diagnosis
+medical examination
+remedy
