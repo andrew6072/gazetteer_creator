@@ -1,0 +1,52 @@
+class of disease | Q112193867
+symptom or sign | Q112965645
+disease | Q12136
+infectious disease | Q18123741
+symptom | Q169872
+negative emotion | Q60539481
+clinical sign | Q1441305
+rare disease | Q929833
+phobia | Q175854
+women's disease | Q1451794
+biological process | Q2996394
+cause of death | Q1931388
+head and neck disease | Q55789477
+health problem | Q2057971
+syndrome | Q179630
+designated intractable/rare disease | Q42303753
+pandemic | Q12184
+mental disorder | Q12135
+notifiable disease | Q314676
+clinical finding | Q28807560
+atypical pneumonia | Q2633267
+emotion | Q9415
+swine disease | Q54947664
+failure mode | Q100151658
+inflammatory disease | Q3508753
+group or class of strains | Q75913269
+biomedical measurand type | Q42014143
+virus | Q808
+epidemiology | Q133805
+arthropathy | Q708176
+disability | Q12131
+infection | Q166231
+physiological condition | Q7189713
+conjunctival disease | Q18556249
+eye inflammation | Q2971524
+complications of pregnancy | Q2916477
+colonic disease | Q18556754
+disease outbreak | Q3241045
+animal disease | Q9190427
+cat disease | Q2084422
+skin disease | Q949302
+sleep disorder | Q177190
+visual disturbance | Q2266426
+sexually transmitted infection | Q12198
+behavioral disorder | Q1815366
+injury | Q193078
+plant disease | Q2662845
+Herpesviridae infectious disease | Q18975237
+rabbit disease | Q9190410
+chronic condition | Q383126
+eye disease | Q3041498
+bone disease | Q4941552

@@ -1,0 +1,38 @@
+class of disease | Q112193867
+symptom or sign | Q112965645
+infectious disease | Q18123741
+disease outbreak | Q3241045
+influenza pandemic | Q2723958
+disease | Q12136
+public health emergency of international concern | Q17076801
+acute disease | Q557429
+health problem | Q2057971
+dog disease | Q53542448
+medical finding | Q639907
+rare disease | Q929833
+swine disease | Q54947664
+pandemic | Q12184
+zoonosis | Q182672
+influenza | Q2840
+women's disease | Q1451794
+head and neck disease | Q55789477
+infection | Q166231
+viral infectious disease | Q1928978
+Herpesviridae infectious disease | Q18975237
+colonic disease | Q18556754
+cause of death | Q1931388
+inflammatory disease | Q3508753
+virus | Q808
+sexually transmitted infection | Q12198
+skin disease | Q949302
+epidemic | Q44512
+bovine disease | Q3473026
+conjunctival disease | Q18556249
+animal disease | Q9190427
+bone disease | Q4941552
+breast disease | Q4959796
+endemic disease | Q506680
+sexual dysfunction | Q1137463
+thoracic disease | Q18553676
+autoimmune disease | Q8084905
+cat disease | Q2084422

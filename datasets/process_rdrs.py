@@ -54,7 +54,7 @@ def process_1document(document: dict, freq_label: dict) -> list:
             begin_pos, end_pos = get_pos_span(text, span['begin'], span['end'])
             entity.extend(words[begin_pos: end_pos + 1])
         
-        entity_with_label = ' '.join(entity) + f" {label}"
+        entity_with_label = (' '.join(entity)).lower() + f" {label}"
         list_of_entities.append(entity_with_label)
         freq_label[label] = freq_label.get(label, 0) + 1
     

@@ -1,0 +1,19 @@
+essential medicine | Q35456
+class of chemical entities with similar applications or functions | Q56256173
+type of chemical entity | Q113145171
+contraceptive | Q25473183
+Medicinal liquor | Q117242249
+medication | Q12140
+group or class of enzymes | Q67015883
+drug class | Q2585617
+pharmaceutical product | Q28885102
+group or class of chemical substances | Q17339814
+protein | Q8054
+type of mixture of chemical entities | Q119892838
+protein complex | Q420927
+biopharmaceutical | Q679692
+peptide hormone | Q416997
+combination drug | Q1779868
+analgesic | Q173235
+biogenic substance type | Q103907369
+antacid | Q274083

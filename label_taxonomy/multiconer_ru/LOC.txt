@@ -1,0 +1,278 @@
+big city | Q1549591
+city | Q515
+city or town | Q7930989
+sovereign state | Q3624078
+capital city | Q5119
+country | Q6256
+human settlement | Q486972
+river | Q4022
+largest city | Q51929311
+city in the United States | Q1093829
+historical country | Q3024240
+metropolis | Q200250
+university | Q3918
+megacity | Q174844
+global city | Q208511
+college town | Q1187811
+tourist destination | Q1200957
+architectural landmark | Q2319498
+railway station | Q55488
+public university | Q875538
+port settlement | Q2264924
+public research university | Q62078547
+U.S. state | Q35657
+urban municipality in Germany | Q42744322
+oblast of Russia | Q835714
+commune of Italy | Q747074
+OECD country | Q113489728
+village of Ukraine | Q21672098
+landlocked country | Q123480
+unitary state | Q179164
+airport | Q1248784
+Hanseatic city | Q707813
+city ​​in Ukraine | Q12131624
+border city | Q902814
+town | Q3957
+arrondissement of France | Q194203
+university in France | Q3551775
+street | Q79007
+museum | Q33506
+municipal district | Q2198484
+oblast of Ukraine | Q3348196
+transcontinental country | Q1323642
+island | Q23442
+church building | Q16970
+tourist attraction | Q570116
+city of regional significance of Ukraine | Q5123999
+Mediterranean country | Q51576574
+non-urban municipality in Germany | Q116457956
+urban okrug in Russia | Q13626398
+international airport | Q644371
+financial centre | Q1066984
+primate city | Q1422929
+rural settlement | Q10354598
+lake | Q23397
+city of Japan | Q494721
+province of Italy | Q15089
+million city | Q1637706
+colonial empire | Q1790360
+federal subject of Russia | Q43263
+archaeological site | Q839954
+national museum | Q17431399
+national library | Q22806
+former capital | Q27554677
+ceremonial county of England | Q180673
+cultural region | Q3502482
+federal city of Russia | Q183342
+capital of Russia | Q4442912
+building | Q41176
+kingdom | Q417175
+municipality of Spain | Q2074737
+separated municipality in Ontario | Q6593035
+city municipality | Q27587207
+neighborhood | Q123705
+city-state | Q133442
+municipality of Brazil | Q3184121
+city in the state of New York | Q15063611
+village of Poland | Q3558970
+historic site | Q1081138
+municipality of the Czech Republic | Q5153359
+place with town rights and privileges | Q13539802
+cadastral populated place in the Netherlands | Q1852859
+federated state of Germany | Q1221156
+historical region | Q1620908
+region of Kazakhstan | Q836672
+square | Q174782
+charter city | Q13218391
+federal aeroport | Q106643740
+port | Q44782
+colony | Q133156
+island country | Q112099
+district capital | Q134626
+village in Belarus | Q65661087
+ancient civilization | Q28171280
+former settlement | Q22674925
+municipality of the Netherlands | Q2039348
+municipality of Austria | Q667509
+boundary point | Q1540416
+unparished area | Q7897276
+ancient city | Q15661340
+rural settlement in Russia | Q634099
+stadium | Q483110
+district town | Q8452914
+city of Iran | Q56557504
+administrative centre | Q1306755
+city with powiat rights | Q925381
+educational institution | Q2385804
+locality | Q3257686
+municipality of Switzerland | Q70208
+geographic region | Q82794
+municipality of Portugal | Q13217644
+social state | Q619610
+country bordering the Baltic Sea | Q63791824
+municipality | Q15284
+city of Switzerland | Q54935504
+realm | Q1250464
+town in the United States | Q15127012
+disputed territory | Q15239622
+freguesia of Portugal | Q1131296
+centre of oblast | Q12134916
+mountain | Q8502
+prefecture of Japan | Q50337
+federation | Q43702
+castle | Q23413
+urban municipality of Poland | Q2616791
+urban settlement in Russia | Q2661988
+metropolitan city of Italy | Q15110
+province of Iran | Q1344695
+urban-type settlement in Russia | Q15078955
+county town | Q1357964
+krai of Russia | Q831740
+satellite state | Q325261
+metro station | Q928830
+municipality of Norway | Q755707
+statutory city in Czechia | Q257978
+prefectural capital of Japan | Q65589340
+state | Q7275
+republic of the Soviet Union | Q236036
+district of Austria | Q871419
+village of Bulgaria | Q15630849
+higher education institution | Q38723
+capital of region | Q12031379
+city of Argentina | Q5770918
+protected area of Russia | Q1959314
+station building | Q1339195
+district of Kazakhstan | Q2643128
+Crown land | Q5473816
+communist state | Q849866
+state or insular area capital of the United States | Q21518270
+canton of France | Q184188
+city of oblast subordinance | Q79323854
+cultural area | Q518261
+theatre building | Q24354
+road | Q34442
+cantonal capital of Switzerland | Q14770218
+oblast of Belarus | Q209325
+special city of Japan | Q1145012
+business cluster | Q745456
+county of California | Q13212489
+kmetstvo of Bulgaria | Q4224624
+free imperial city | Q57318
+municipality of Denmark | Q2177636
+district of Moscow | Q4389092
+sanctuary city | Q3559093
+region of France | Q36784
+city in Chile | Q25412763
+province of Turkey | Q48336
+prefecture-level city | Q748149
+mountain range | Q46831
+Serbian city | Q37800986
+institute of technology | Q1371037
+district of the Czech Republic | Q548611
+county of Florida | Q13410422
+district of Belarus | Q2043199
+state of Mexico | Q15149663
+city of Pennsylvania | Q21010817
+urban-type settlement in Ukraine | Q4100864
+bay | Q39594
+museum building | Q24699794
+county of Iran | Q137535
+governorate of the Russian Empire | Q47530375
+core city of Japan | Q1137833
+federative unit of Brazil | Q485258
+dependent territory | Q161243
+city of oblast significance | Q56580425
+raion | Q7688
+siege | Q188055
+empire | Q48349
+gulf | Q1322134
+residenz | Q1180262
+work settlement of Russia | Q20019082
+history museum | Q16735822
+royal palace | Q53536964
+district of India | Q1149652
+land-grant university | Q615150
+national research university | Q4315006
+province of Argentina | Q44753
+civil parish | Q1115575
+Districts of Portugal | Q3032141
+city district in Russia | Q15195406
+province of Canada | Q11828004
+town divided by border | Q67123843
+districts of Israel | Q193560
+municipality of Romania | Q640364
+fortress | Q57831
+urban-rural municipality of Poland | Q3491915
+municipalities and cities of Serbia | Q783930
+region of the Czech Republic | Q38911
+urban district of Bavaria | Q85631896
+rural district of Bavaria | Q85482556
+canton of France | Q18524218
+Italian city-state | Q4115680
+sieĺsaviet of Belarus | Q15071808
+city/town in Russia | Q106389302
+town in Hungary | Q13218690
+şəhər | Q56557664
+village in Turkey | Q1529096
+municipality of Sweden | Q127448
+city of Illinois | Q110071194
+statutory city of Austria | Q262882
+Russian-occupied territories of Ukraine | Q20094029
+Jewish cemetery | Q846659
+constituent country of the United Kingdom | Q3336843
+city of raion subordinance | Q79324274
+urban settlement in Belarus | Q91733160
+canton of Switzerland | Q23058
+consolidated city-county | Q3301053
+region of Italy | Q16110
+town in Croatia | Q15105893
+cathedral | Q2977
+Islamic Republic | Q672729
+mkhare | Q1210300
+raion of Ukraine | Q1267632
+château | Q751876
+former village | Q21507948
+rural municipality of Poland | Q3504085
+palace | Q16560
+market town | Q18511725
+state city of Latvia | Q109329953
+city under state jurisdiction in Latvia | Q15127838
+district of Latvia | Q840019
+municipality of Finland | Q856076
+town of Japan | Q1059478
+city | Q11881845
+county of Sweden | Q200547
+city in Cyprus | Q29556224
+city in Bulgaria | Q89487741
+province of Afghanistan | Q158683
+suburb | Q188509
+house | Q3947
+park | Q22698
+agrotown | Q1989945
+city or town in Armenia | Q20724701
+cadastral area in the Czech Republic | Q20871353
+urban area in Sweden | Q12813115
+provincial or territorial capital city in Canada | Q21507383
+mainland | Q1140140
+sea | Q165
+oblast seat | Q15344922
+municipality of Bulgaria | Q1906268
+county of Croatia | Q57053
+Roman province | Q182547
+municipality of Slovakia | Q6784672
+province of Spain | Q162620
+municipality of Mexico | Q1952852
+region of Chile | Q590080
+district of Serbia | Q648681
+district of Albania | Q123266
+district (China) | Q1065118
+republic of Russia | Q41162
+uyezd of the Russian Empire | Q18867465
+village | Q751708
+shipyard | Q190928
+district of Iran | Q11353
+provinces of Prussia | Q574299
+volost of the Russian Empire | Q20732405
+Historical city of Russia | Q3920245
+Estate (Russia) | Q64627814
+national park of Russia | Q1969226

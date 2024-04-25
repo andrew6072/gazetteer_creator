@@ -1,0 +1,124 @@
+association football club | Q476028
+musical group | Q215380
+political party | Q7278
+basketball team | Q13393265
+baseball team | Q13027888
+nonprofit organization | Q163740
+American football team | Q17156793
+university and college sports club | Q2367225
+ice hockey team | Q4498974
+rock band | Q5741069
+college sports team | Q18558301
+sports club | Q847017
+international sport governing body | Q11422536
+faculty | Q180958
+association football team | Q15944511
+rugby league team | Q15221215
+international organization | Q484652
+women's association football team | Q28140340
+sports organization | Q4438121
+sports team | Q12973014
+military unit | Q176799
+intergovernmental organization | Q245065
+educational organization | Q5341295
+confederation | Q170156
+reserve team | Q2412834
+charitable organization | Q708676
+regional organization | Q4120211
+political economic union | Q120121699
+WWII resistance group | Q65971239
+communist party | Q233591
+political organization | Q7210356
+rugby union club | Q43009164
+musical duo | Q9212979
+cheerleading squad | Q60171954
+group of humans | Q16334295
+professional sports team | Q20639856
+handball team | Q10517054
+social democratic party | Q108564724
+national sports team | Q1194951
+standards organization | Q1328899
+organization | Q43229
+rugby union team | Q14645593
+political coalition | Q6138528
+government commission | Q17456916
+non-governmental organization | Q79913
+men's association football team | Q103229495
+association | Q15911314
+badminton association | Q29592127
+auto racing team | Q20074337
+Formula One team | Q10497835
+metaorganization | Q37178026
+opera company | Q20819922
+juvenile political organization | Q2493450
+umbrella organization | Q1156831
+Australian rules football club | Q17374546
+religious organization | Q1530022
+association football league | Q15991303
+advocacy group | Q431603
+political party in Germany | Q2023214
+major party | Q6738353
+working group | Q27493
+girl group | Q641066
+fraternal organization | Q996839
+professional association | Q829080
+support group | Q3117735
+self-help groups for mental health | Q7448114
+commercial organization | Q21980538
+boy band | Q216337
+parliamentary group | Q848197
+royal family | Q2006518
+prestigious clan | Q1436376
+regiment | Q52371
+cooperative | Q4539
+hate group | Q3233801
+terrorist organization | Q17127659
+armed organization | Q17149090
+human social group | Q874405
+football club | Q17270000
+beach soccer club | Q116953048
+nominating group | Q7048615
+historic preservation organization | Q89126428
+historical society | Q5774403
+genealogical society | Q5433332
+heraldic society | Q1607796
+council | Q4358176
+Jewish organization | Q104805859
+court | Q41487
+forum | Q3845375
+consortium | Q194166
+film organization | Q104649845
+musical trio | Q281643
+vocal group | Q120544
+political faction | Q1393724
+student society | Q1685451
+musical ensemble | Q2088357
+string quartet | Q207338
+major religion | Q6957341
+economic union | Q3623811
+membership organization | Q6815100
+community | Q177634
+minority group | Q30103
+club cycling team | Q20639848
+UCI Continental Team | Q1756006
+esports team | Q61974339
+pipe band | Q3085519
+team | Q327245
+rowing club | Q7372078
+softball team | Q82969709
+writers union | Q12057459
+students' union | Q877998
+fraternal party | Q2257409
+bloc party | Q49759
+chess club | Q1896682
+roller hockey team (quad) | Q99747627
+women's sports team | Q61740358
+Olympic delegation | Q26213387
+jazz club | Q1684522
+scientific organization | Q16519632
+military division | Q169534
+basketball association | Q15986354
+women's rugby union club | Q113144812
+tribe | Q133311
+idol group | Q108424578
+research group | Q1241025

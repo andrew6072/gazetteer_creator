@@ -1,0 +1,38 @@
+human | Q5
+Wikimedia human name disambiguation page | Q22808320
+fictional human | Q15632617
+literary character | Q3658341
+film character | Q15773347
+male given name | Q12308941
+animated character | Q15711870
+family name | Q101352
+comics character | Q1114461
+human whose existence is disputed | Q21070568
+human biblical figure | Q20643955
+anime character | Q80447738
+video game character | Q1569167
+musical theatre character | Q63975020
+crime film character | Q116984826
+operatic character | Q50386450
+fantasy film character | Q117289741
+animated television character | Q123126876
+animated film character | Q118247723
+mythological Greek character | Q22988604
+stock character | Q636497
+fictional child | Q19324463
+female given name | Q11879590
+given name | Q202444
+action film character | Q116984649
+family name named after given name | Q98775491
+character from the Quran and the Bible | Q3236487
+pseudo-author | Q92306274
+fictional king | Q16658189
+Saqqara king | Q110550976
+Pharao of the 3rd dynasty | Q110643371
+pharaohs of old Kingdown of Egypt | Q110518305
+adventure film character | Q66808903
+royal charter | Q1422253
+manga character | Q87576284
+Ukrainian masculine given name | Q104868059
+Ukrainian surname | Q2635283
+Russian given name | Q4401011

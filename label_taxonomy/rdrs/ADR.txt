@@ -1,0 +1,27 @@
+symptom or sign | Q112965645
+class of disease | Q112193867
+symptom | Q169872
+disease | Q12136
+clinical sign | Q1441305
+biological process | Q2996394
+health problem | Q2057971
+psychopathological symptom | Q30897648
+emotion | Q9415
+medical finding | Q639907
+behavior | Q9332
+type of process | Q116505632
+syndrome | Q179630
+negative emotion | Q60539481
+phobia | Q175854
+physiological condition | Q7189713
+anxiety disorder | Q544006
+basic emotion | Q16748867
+reflex | Q179405
+psychopathological syndrome | Q56815734
+failure mode | Q100151658
+mental disorder | Q12135
+tremor | Q223907
+neurological disorder | Q3339235
+chronic condition | Q383126
+parasomnia | Q559869
+behavioral disorder | Q1815366

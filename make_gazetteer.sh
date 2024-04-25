@@ -2,8 +2,8 @@
 REPO=$PWD
 
 DATA_DIR="${REPO}/datasets/"
-THRESHOLD=${1:-0.80}
-LIMIT=${2:-3}
+THRESHOLD=${1:-0.90}
+LIMIT=${2:-10}
 LAN=${3:-"en"}
 CORPUS=${4:-"multiconer"}
 

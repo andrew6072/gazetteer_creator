@@ -1,0 +1,54 @@
+film | Q11424
+album | Q482994
+television series | Q5398426
+video game | Q7889
+musical work/composition | Q105543609
+literary work | Q7725634
+music track with vocals | Q55850593
+video game series | Q7058673
+dramatico-musical work | Q58483083
+television program | Q15416
+song | Q7366
+animated television series | Q117467246
+television film | Q506240
+painting | Q3305213
+short film | Q24862
+3D film | Q229390
+animated feature film | Q29168811
+comic book series | Q14406742
+manga series | Q21198342
+miniseries | Q1259759
+film series | Q24856
+radio program | Q1555508
+feature film | Q24869
+book series | Q277759
+comic strip | Q838795
+dramatic work | Q116476516
+poem | Q5185279
+anime television series | Q63952888
+limited series | Q3297186
+animated film | Q202866
+novel series | Q1667921
+podcast episode | Q61855877
+silent film | Q226730
+creative work | Q17537576
+animated short film | Q17517379
+sculpture | Q860861
+comic book album | Q2831984
+music track without lyrics | Q55850643
+drama television series | Q1366112
+comic book | Q1760610
+drawing | Q93184
+live-action animated film | Q25110269
+comics | Q1004
+book | Q571
+anime film | Q20650540
+graphic novel | Q725377
+play | Q25379
+album series | Q20671381
+Star Trek novel | Q72996181
+Star Trek comic | Q3496994
+webcomic | Q213369
+Star Trek series | Q62573441
+anime | Q1107
+short story | Q49084

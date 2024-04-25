@@ -1,0 +1,34 @@
+human | Q5
+fictional human | Q15632617
+television character | Q15773317
+male given name | Q12308941
+family name | Q101352
+animated character | Q15711870
+female given name | Q11879590
+comics character | Q1114461
+musical theatre character | Q63975020
+literary character | Q3658341
+sibling duo | Q14073567
+video game character | Q1569167
+anime character | Q80447738
+operatic character | Q50386450
+human biblical figure | Q20643955
+double given name | Q1243157
+action film character | Q116984649
+manga character | Q87576284
+mythical character | Q4271324
+historical character | Q3375731
+crime film character | Q116984826
+theatrical character | Q3375722
+given name | Q202444
+Quranic character | Q18563360
+God in Christianity | Q825
+savior | Q115305179
+fictional child | Q19324463
+fictional character | Q95074
+hero name | Q67094518
+Olympian god | Q113103481
+Korean name | Q498782
+family name named after given name | Q98775491
+descendant | Q183905
+biblical proper name | Q62834786

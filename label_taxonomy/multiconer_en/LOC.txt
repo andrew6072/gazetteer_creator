@@ -1,0 +1,345 @@
+big city | Q1549591
+city | Q515
+sovereign state | Q3624078
+country | Q6256
+city in the United States | Q1093829
+historical country | Q3024240
+OECD country | Q113489728
+county seat | Q62049
+capital city | Q5119
+human settlement | Q486972
+largest city | Q51929311
+town | Q3957
+university | Q3918
+village | Q532
+railway station | Q55488
+metropolis | Q200250
+megacity | Q174844
+river | Q4022
+town in the United States | Q15127012
+asteroid | Q3863
+Mediterranean country | Q51576574
+global city | Q208511
+port settlement | Q2264924
+commune of France | Q484170
+kingdom | Q417175
+urban municipality in Germany | Q42744322
+island | Q23442
+colonial power | Q20181813
+church building | Q16970
+college town | Q1187811
+island country | Q112099
+federal republic | Q512187
+art museum | Q207694
+U.S. state | Q35657
+state | Q7275
+civil parish | Q1115575
+airport | Q1248784
+census-designated place in the United States | Q498162
+landlocked country | Q123480
+social state | Q619610
+Star Trek location | Q99281788
+country bordering the Baltic Sea | Q63791824
+rapid transit | Q5503
+commune of Italy | Q747074
+city in the state of New York | Q15063611
+village of Poland | Q3558970
+tourist destination | Q1200957
+realm | Q1250464
+crown colony | Q1351282
+city with powiat rights | Q925381
+department of France | Q6465
+neighborhood | Q123705
+land-grant university | Q615150
+district of India | Q1149652
+satellite state | Q325261
+international airport | Q644371
+powiat | Q247073
+real country in a fiction work | Q57663042
+district with city status | Q21503295
+rural municipality of Poland | Q3504085
+municipality of Georgia | Q2655841 
+transcontinental country | Q1323642
+Commonwealth realm | Q202686
+Hanseatic city | Q707813
+mountain | Q8502
+empire | Q48349
+secular state | Q859563
+border city | Q902814
+national library | Q22806
+museum | Q33506
+republic regime in France | Q17152708
+federation | Q43702
+state capital | Q11271835
+financial centre | Q1066984
+historical unrecognized state | Q99541706
+residenz | Q1180262
+municipality seat | Q15303838
+building | Q41176
+national museum | Q17431399
+road | Q34442
+market town | Q18511725
+state of India | Q12443800
+charter city | Q13218391
+City district in Baden-Württemberg | Q2327515
+city-state | Q133442
+lake | Q23397
+urban municipality of Poland | Q2616791
+city or town | Q7930989
+historical region | Q1620908
+locality | Q3257686
+archipelagic state | Q13107770
+municipality of Norway | Q755707
+state or insular area capital of the United States | Q21518270
+institute of technology | Q1371037
+movie theater | Q41253
+municipality | Q15284
+archaeological site | Q839954
+district of Turkey | Q1147395
+urban-rural municipality of Poland | Q3491915
+railway line | Q728937
+suburb | Q188509
+municipality of Brazil | Q3184121
+municipality of the Czech Republic | Q5153359
+fictional city | Q1964689
+hotel | Q27686
+municipality of the Netherlands | Q2039348
+province of Turkey | Q48336
+separated municipality in Ontario | Q6593035
+tourist attraction | Q570116
+cemetery | Q39614
+university campus | Q209465
+municipality with town privileges in the Czech Republic | Q15978299
+place with town rights and privileges | Q13539802
+private university | Q902104
+county of California | Q13212489
+municipality with authorized municipal office | Q7841907
+Czech municipality with expanded powers | Q7819319
+city of India | Q58339717
+seat of government | Q1901835
+cadastral populated place in the Netherlands | Q1852859
+district of the Czech Republic | Q548611
+area of London | Q2755753
+municipality of Spain | Q2074737
+county town | Q1175512
+town of New York | Q106071004
+business cluster | Q745456
+district town | Q8452914
+municipality of Switzerland | Q70208
+district capital | Q134626
+metro station | Q928830
+New England town | Q2154459
+geographic region | Q82794
+gromada of Poland | Q479053
+urban area in Sweden | Q12813115
+station located on surface | Q22808404
+federated state of Germany | Q1221156
+unitary authority area in England | Q1136601
+diocese of the Catholic Church | Q3146899
+Crown land | Q5473816
+central business district | Q738570
+non-metropolitan district | Q1187580
+city in Chile | Q25412763
+street | Q79007
+village of New York | Q55237813
+national Church | Q1649443
+state church | Q2325038
+province of Canada | Q11828004
+high school | Q9826
+public library | Q28564
+arrondissement of France | Q194203
+municipal part in Czechia | Q61089180
+castle | Q23413
+manor estate | Q2116450
+province of Italy | Q15089
+city of Oregon | Q63440326
+consolidated city-county | Q3301053
+communist state | Q849866
+constituent country of the United Kingdom | Q3336843
+municipality of Colombia | Q2555896
+city of Pennsylvania | Q21010817
+village in India | Q56436498
+former capital | Q27554677
+cultural region | Q3502482
+enclave | Q171441
+capital of region | Q12031379
+district of the United Kingdom | Q17601336
+cadastral area in the Czech Republic | Q20871353
+house | Q3947
+state level institution | Q98676607
+urban area | Q702492
+Napoleonic client state | Q26879763
+national university | Q265662
+city of Switzerland | Q54935504
+canton of France | Q184188
+municipality of Sweden | Q127448
+research institute | Q31855
+school | Q3914
+drainage basin | Q166620
+ancient city | Q15661340
+park | Q22698
+non-urban municipality in Germany | Q116457956
+underground station | Q22808403
+prefecture-level city | Q748149
+state of Australia | Q5852411
+municipality of Belgium | Q493522
+municipality of Austria | Q667509
+municipality of Finland | Q856076
+human population | Q33829
+college of the University of Oxford | Q2581649
+member states of the United Nations | Q160016
+urban area in Norway | Q15092344
+Scottish civil parish | Q5124673
+former municipality of Switzerland | Q685309
+bay | Q39594
+watercourse | Q355304
+dead-end railway station | Q55485
+national park | Q46169
+protected area | Q473972
+statutory city in Czechia | Q257978
+facility | Q13226383
+city of Iran | Q56557504
+city in New Jersey | Q2974552
+gazetted locality of Victoria | Q45242174
+village in Turkey | Q1529096
+primary school | Q9842
+boarding school | Q269770
+prefecture of Japan | Q50337
+museum building | Q24699794
+territorial collectivity of France with special status Q22923920
+primate city Q1422929
+hospital | Q16917
+municipality of Romania | Q640364
+province of Sri Lanka | Q861559
+stadium | Q483110
+theatre building | Q24354
+county of Ireland | Q179872
+city of United Kingdom | Q110390579
+Belgian municipality with the title of city | Q15273785
+provincial or territorial capital city in Canada | Q21507383
+metropolitan municipality in Turkey | Q2716259
+municipal borough Q518343
+administrative centre | Q1306755
+independent city | Q1266818
+continent | Q5107
+hill | Q54050
+palace | Q16560
+volcano | Q8072
+bridge | Q12280
+fort | Q1785071
+tram stop | Q2175765
+chapel | Q108325
+cultural area | Q518261
+region of England | Q48091
+province of Spain | Q162620
+republic of the Soviet Union | Q236036
+electoral district in Turkey | Q106114863
+voivodeship of Poland | Q150093
+city center | Q1468524
+district of Austria | Q871419
+federal state of Austria | Q261543
+underground railway station | Q55491
+canton of Switzerland | Q23058
+region of Finland | Q193512
+province of Pakistan | Q15058985
+federated state | Q107390
+territory | Q183366
+region of the Czech Republic | Q38911
+rural district of Bavaria | Q85482556
+elevated station | Q11670533
+interchange station | Q1147171
+settlement in Croatia | Q4845841
+city of Illinois | Q110071194
+urban district of Bavaria | Q85631896
+county of Texas | Q11774097
+college | Q189004
+geography of geographic location | Q46865913
+liberal arts college | Q1377182
+municipality of Slovakia | Q6784672
+city of Argentina | Q5770918
+town in Hungary | Q13218690
+cathedral | Q2977
+sub-province-level division | Q250811
+district of Costa Rica | Q2292572
+Islamic Republic | Q672729
+sultanate | Q12759805
+city of California | Q13218357
+Portuguese Empire | Q200464
+townland | Q2151232
+village in Indonesia | Q26211545
+town in Croatia | Q15105893
+main stream | Q573344
+post office | Q35054
+statutory city of Austria | Q262882
+region of Cameroon | Q869042
+railway bridge | Q1210334
+city of Portugal | Q15647906
+province of Kenya | Q70252
+geographic location | Q2221906
+gulf | Q1322134
+pub | Q212198
+national capital | Q108178728
+central station | Q18543139
+skyscraper | Q11303
+federal city of Russia | Q183342
+cultural center | Q1329623
+canal | Q12284
+district | Q149621
+port | Q44782
+railway stop | Q55488
+reservoir | Q131681
+capital region | Q1062177
+quarter | Q2983893
+island group | Q1402592
+beach | Q40080
+heritage site | Q358
+dam | Q12323
+château | Q751876
+pitch | Q2310214
+library | Q7075
+valley | Q39816
+mine | Q820477
+prison | Q40357
+waterfall | Q34038
+heliport | Q502074
+tambon | Q1077097
+ruins | Q109607
+province | Q34876
+ferry route | Q18984099
+wind farm | Q194356
+state of Nigeria | Q465842
+arena | Q641226
+hostel | Q654772
+casino | Q133215
+farm | Q131596
+resort | Q875157
+ridge | Q740445
+sea | Q165
+tower | Q12518
+boulevard | Q54114
+harbor | Q283202
+rural area | Q175185
+nightclub | Q622425
+restaurant | Q11707
+barracks | Q131263
+shore | Q468756
+borough | Q5195043
+factory | Q83405
+downtown | Q1050303
+holy city | Q692581
+garden | Q1107656
+area | Q1414991
+avenue | Q7543083
+highland | Q878223
+landscape | Q107425
+wetland | Q170321
+quarry | Q188040
+waterway | Q1267889
+polder | Q106259
+volcanic cone | Q1368970
+northern village | Q3559003
+necropolis | Q200141
+zone of Ethiopia | Q219875
+mountain hut | Q182676
+station | Q12819564
+cave | Q35509

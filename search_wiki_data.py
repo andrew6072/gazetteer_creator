@@ -32,8 +32,8 @@ def get_instances_by_property_P31(api_url: str, page_id: str, lang: str) -> Gene
     if "P31" in claims:
         list_of_topics = claims["P31"]
     
-    if "P279" in claims:
-        list_of_topics.extend(claims["P279"])
+    # if "P279" in claims:
+    #     list_of_topics.extend(claims["P279"])
         
     for topic in list_of_topics:
         entity_id = topic.get("mainsnak", {}).get("datavalue", {}).get("value", {}).get("id")
@@ -62,7 +62,7 @@ def get_instances_by_property_P31(api_url: str, page_id: str, lang: str) -> Gene
 # https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q775450|Q3041294|Q646968|Q434841|Q11920&format=json&props=labels&languages=en|de|fr
 # """
 
-def get_topics_from_wkdt_search_tool(url: str, api_url: str, query: str, lang: str, limit: int = 500) -> Dict[str, str]:
+def get_topics_from_wkdt_search_tool(url: str, api_url: str, query: str, lang: str, limit: int = 10) -> Dict[str, str]:
     """
     Retrieves instances from the Wikidata search tool based on a given query, and then finds the related topics for each instance.
 

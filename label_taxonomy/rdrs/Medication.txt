@@ -1,0 +1,32 @@
+type of chemical entity | Q113145171
+dosage form | Q718608
+medication | Q12140
+drug class | Q2585617
+class of chemical entities with similar applications or functions | Q56256173
+aerosol | Q104541
+foam | Q215414
+antiviral drug | Q846227
+vaccine type | Q105967696
+essential medicine | Q35456
+homeopathic drug | Q50092815
+crude drug | Q735160
+medical procedure type | Q55214844
+mixture | Q169336
+group or class of proteins | Q84467700
+pharmaceutical product | Q28885102
+herbal medicinal product | Q95997873
+protein family | Q417841
+complex mixtures | Q66902062
+medical specialty | Q930752
+clinical trial | Q30612
+pharmacy | Q13107184
+pharmaceutical science | Q7180763
+pharmaceutical industry | Q507443
+psychoactive drug | Q3706669
+medical entity type | Q103995117
+medical treatment | Q179661
+biopharmaceutical | Q679692
+drug | Q8386
+pharmacological class of chemical compounds | Q55499636
+alternative medical treatment | Q31338769
+medical treatment | Q179661

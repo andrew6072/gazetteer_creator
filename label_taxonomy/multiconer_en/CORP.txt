@@ -1,0 +1,112 @@
+business | Q4830453
+enterprise | Q6881511
+public company | Q891723
+television station | Q1616075
+website | Q35127
+professional sports league | Q15991290
+brand | Q431289
+organization | Q43229
+television channel | Q2001305
+television network | Q1254874
+airline | Q46970
+automobile manufacturer | Q786820
+record company | Q2442401
+radio station | Q14350
+company | Q783794
+subsidiary | Q658255
+book publisher | Q1320047
+association football league | Q15991303
+trademark | Q167270
+film production company | Q1762059
+public broadcaster | Q1126006
+television production company | Q10689397
+broadcaster | Q15265344
+holding company | Q219577
+production company | Q11396960
+nonprofit organization | Q163740
+transport company | Q740752
+bank | Q22687
+multinational corporation | Q161726
+credit institution | Q730038
+comic publishing company | Q1114515
+sports league | Q623109
+software company | Q1058914
+American football league | Q124059801
+aerospace manufacturer | Q936518
+privately held company | Q1589009
+media company | Q1331793
+retail chain | Q507619
+government agency | Q327333
+technology company | Q18388277
+academic publisher | Q114853062
+car brand | Q10429667
+commercial organization | Q21980538
+railway company | Q249556
+association football club | Q476028
+financial institution | Q650241
+research institute | Q31855
+state-owned enterprise | Q270791
+conglomerate | Q778575
+architectural firm | Q4387609
+supermarket chain | Q18043413
+sports organization | Q4438121
+fast food restaurant chain | Q18509232
+charitable organization | Q708676
+food manufacturer | Q1252971
+mixed martial arts organization | Q24040733
+media distributor | Q12540664
+corporation | Q167037
+telecommunication company | Q2401749
+motorcycle manufacturer | Q15081030
+low-cost airline | Q190915
+web broadcaster | Q109509795
+animation studio | Q1107679
+camera manufacturer | Q11294827
+Umbrella brand | Q1156739
+department store chain | Q2549179
+rail vehicle manufacturer | Q2995256
+music publishing company | Q1917775
+oil company | Q14941854
+basketball association | Q15986354
+internet service provider | Q11371
+international broadcasting | Q779239
+talent agency | Q5354754
+racecar constructor | Q15648574
+commercial vehicle manufacturer | Q2005696
+professional services firm | Q23670565
+dot-com company | Q1194970
+tabletop role-playing game publisher | Q100271038
+weapons manufacturing company | Q2538889
+historical motorcycle manufacturer | Q15081032
+open-access publisher | Q45400320
+chartered company | Q162157
+nonprofit corporation | Q17084016
+investment bank | Q319845
+musical instrument manufacturing company | Q55190325
+film distributor | Q368290
+central bank | Q66344
+music organization | Q32178211
+standards organization | Q1328899
+board game publishing company | Q3579158
+film studio | Q375336
+manufacturer | Q13235160
+music production company | Q58318936
+train operating company | Q17102188
+trade association | Q2178147
+institution | Q178706
+design company | Q15634581
+entertainment company | Q20739124
+management consulting company | Q122229703
+statutory corporation | Q699386
+pharmaceutical company | Q19644607
+intercity bus company | Q15712205
+commercial bank | Q848507
+beer brand | Q15075508
+automotive supplier | Q3477381
+shipbuilding company | Q16274795
+insurance company | Q2143354
+rail company (Japan) | Q85907346
+hypermarket chain | Q105615608
+computer manufacturer | Q1055701
+law firm | Q613142
+hotel chain | Q1631129

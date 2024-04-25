@@ -1,0 +1,101 @@
+automobile model | Q3231690
+film | Q11424
+album | Q482994
+product model | Q10929058
+food ingredient | Q25403900
+product category | Q63981612
+automobile model series | Q59773381
+type of food or dish | Q19861951
+aircraft model | Q15056995
+model series | Q811701
+material | Q214609
+painting | Q3305213
+food | Q2095
+magazine | Q41298
+bus model | Q23039057
+racing automobile model | Q90834785
+product | Q2424752
+video game console model | Q56682555
+dish | Q746549
+weapon model | Q15142894
+food product | Q951964
+fuel oil | Q214199
+marine oil terminal | Q84266627
+computer model | Q55990535
+engine model | Q15057021
+smartphone model | Q19723451
+crude drug | Q735160
+herbal medicinal product | Q95997873
+drink | Q40050
+excipient | Q902638
+software | Q7397
+firearm model | Q22704163
+meat | Q10990
+ingredient | Q10675206
+organic matter | Q1783121
+groat | Q1436715
+grain crop | Q113976623
+metal | Q11426
+wood product | Q99317889
+cultivar | Q4886
+toy | Q11422
+drug | Q8386
+human food | Q8195619
+food crop | Q31839438
+material | Q16829513
+soup | Q41415
+alcoholic beverage | Q154
+clock | Q376
+tablet model series | Q113990212
+craft | Q2207288
+antique car | Q5352998
+soft drink | Q147538
+musical instrument | Q34379
+handicraft | Q877729
+sex toy | Q10816
+clothing | Q11460
+Mac | Q75687
+raw material | Q192355
+street food | Q1316209
+black tea | Q203415
+breakfast cereal | Q768267
+candy | Q185583
+CPU model | Q122967152
+cheese | Q10943
+rocket model | Q110055303
+rice dish | Q21976260
+national dish | Q1391582
+meal | Q6460735
+dessert | Q182940
+bread | Q7802
+headdress | Q28972621
+condiment dish | Q117321751
+trousers | Q39908
+video camera | Q313614
+goods | Q28877
+commodity | Q28213828
+vegetable oil | Q4739805
+eyewear | Q5422874
+earphone | Q30090726
+salad | Q9266
+puppet | Q1913135
+mobile device | Q5082128
+seed | Q40763
+meat product | Q1427887
+teapot | Q245005
+finger food | Q748611
+oil mist | Q12269575
+food emulsifier | Q60449171
+dim sum | Q339836
+spoon | Q81895
+pie | Q13360264
+skirt | Q2160801
+bowl | Q153988
+stew | Q2920963
+pork dish | Q28100020
+beef dish | Q28100368
+white-label product | Q7888882
+fruit | Q1030567
+vegetable | Q11004
+seed oil | Q7445643
+perfume | Q131746

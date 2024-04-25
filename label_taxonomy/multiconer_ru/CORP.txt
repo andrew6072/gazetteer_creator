@@ -1,0 +1,91 @@
+business | Q4830453
+enterprise | Q6881511
+public company | Q891723
+television station | Q1616075
+television channel | Q2001305
+film production company | Q1762059
+brand | Q431289
+television network | Q1254874
+airline | Q46970
+film studio | Q375336
+record company | Q2442401
+holding company | Q219577
+publisher | Q2085381
+cable channel | Q5009242
+video game publisher | Q1137109
+television production company | Q10689397
+production company | Q11396960
+trademark | Q167270
+automobile manufacturer | Q786820
+book publisher | Q1320047
+broadcaster | Q15265344
+company | Q783794
+public broadcaster | Q1126006
+state-owned enterprise | Q270791
+professional sports league | Q15991290
+bank | Q22687
+technology company | Q18388277
+software company | Q1058914
+multinational corporation | Q161726
+government agency | Q327333
+aerospace manufacturer | Q936518
+media company | Q1331793
+news agency | Q192283
+transport company | Q740752
+academic publisher | Q114853062
+conglomerate | Q778575
+comic publishing company | Q1114515
+telecommunication company | Q2401749
+privately held company | Q1589009
+broadcast network | Q141683
+media conglomerate | Q1916382
+corporation | Q167037
+motorcycle manufacturer | Q15081030
+retail chain | Q507619
+tractor brand | Q98579904
+camera manufacturer | Q11294827
+web broadcaster | Q109509795
+entertainment newspaper | Q106652786
+food manufacturer | Q1252971
+professional services firm | Q23670565
+credit rating agency | Q765517
+talent agency | Q5354754
+rail vehicle manufacturer | Q2995256
+railway company | Q249556
+dot-com company | Q1194970
+oil company | Q14941854
+shipbuilding company | Q16274795
+joint-stock company | Q134161
+music production company | Q58318936
+musical instrument manufacturing company | Q55190325
+East India Company | Q26236686
+company division | Q107658553
+multi-level marketing company | Q29643579
+entertainment company | Q20739124
+management consulting company | Q122229703
+public joint-stock company | Q65176929
+mining company | Q2990216
+energy company | Q1341478
+pharmaceutical company | Q19644607
+private military company | Q1057214
+board game publishing company | Q3579158
+train operating company | Q17377208
+open joint-stock company | Q13641190
+chartered company | Q162157
+Foreign chinese state-owned company | Q124347900
+Chinese wholly state-owned enterprise | Q19852185
+trading company | Q2865305
+medical device company | Q63383584
+insurance company | Q2143354
+oilfield service company | Q94532151
+design company | Q15634581
+bus company | Q10438042
+education company | Q57285129
+consulting company | Q2089936
+accountancy firm | Q2781630
+logistics provider | Q1468664
+rail company (Japan) | Q85907346
+telephone company | Q1266169
+unlisted public company | Q7258079
+platform company | Q110029326
+theatre company | Q11812394

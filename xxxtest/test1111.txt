@@ -1,0 +1,496 @@
+# id 1000239
+оксолиновая Medication
+мазь Medication
+vishpha Medication
+бесполезная Disease
+отзывам знакомых Medication
+, Medication
+простудой Disease
+советовать ее не могу Note
+бесполезная Disease
+
+# id 1004574
+успокоительное Medication
+materia medica Medication
+тенотен Medication
+слабовато Note
+стресс Disease
+недосып Disease
+нервы Disease
+рекламировали этот препарат по телевизору Medication
+пить Medication
+эффекта не почувствовала вообще Disease
+стала немного спокойнее Disease
+пить Medication
+месяца 3 Medication
+пропила Medication
+помог он совсем немного Note
+3 месяца Medication
+прочла , что в нем накопительный эффект Note
+пила Medication
+валерьянку Medication
+слабовато Note
+
+# id 1023097
+тонзилгон н Medication
+тонзилгон н Medication
+помогает Disease
+врач Medication
+горлышко , красное Disease
+тонзилгон Medication
+тонзилгон Medication
+хорошо помогает Disease
+спирта много Note
+разрешается с грудного возраста Note
+очень эффективное средство Disease
+от больного горла Disease
+после первого дня намного легче и уже не так сильно болит горло Disease
+болит горло Disease
+проблемы с горлом Disease
+тонзилгон Medication
+тонзилгон Medication
+помогает Disease
+
+# id 1023561
+успокоительное Medication
+materia medica Medication
+тенотен Medication
+помогает Disease
+тенотен Medication
+депрессии Disease
+посоветовали подруги Medication
+отлично успокаивает Disease
+аллергических реакций не обнаружила Note
+таблетки Medication
+рассасываются Medication
+отличное средство Disease
+от депрессии Disease
+депрессии Disease
+помогает Disease
+
+# id 1031967
+шипучие таблетки Medication
+простуды Disease
+гриппа Disease
+naturprodukt Medication
+антигриппин Medication
+может вызвать аллергию Note
+аллергию ADR
+хорошее средство Disease
+простуды Disease
+справляется с симптомами быстро , эффективно Disease
+после его приема у меня возникало желание поскорее лечь под теплое одеяло и уснуть Note
+способен вызвать сыпь Note
+сыпь чесаться ADR
+аллергии ADR
+данная реакция была не единоразовая , а именно : на каждое применение антигриппина Note
+антигриппина Medication
+может вызвать аллергию Note
+аллергию ADR
+
+# id 1034869
+ноотропный Medication
+кортексин Medication
+кортексин Medication
+ожидала большего Note
+нервопатологу Medication
+не говорит Disease
+кортексина Medication
+кортексина Medication
+пантогам Medication
+пантогам Medication
+был сдвиг в понимании речи Disease
+говорить так и не начала Disease
+эффекта вообще никакого не заметила Disease
+ожидала большего Note
+
+# id 1035079
+свечи Medication
+ректальные Medication
+виферон Medication
+виферон Medication
+150000 ме Medication
+ноль эффекта Disease
+врачу Medication
+свечи Medication
+эффект нулевой Disease
+свечи Medication
+не помогали Disease
+врач Medication
+виферон Medication
+виферон Medication
+бесполезен Disease
+ноль эффекта Disease
+
+# id 1044643
+таблетки Medication
+иммунал Medication
+иммунал Medication
+мой спаситель Note
+подруга посоветовала Medication
+раствор Medication
+иммунал Medication
+иммунал Medication
+раствор Medication
+раствор набирается в приложенный шприц Medication
+вливала содержимое в сладкий чай Medication
+попили Medication
+1 день Medication
+пить Medication
+выздоровел Disease
+я осталась им довольна Disease
+мой спаситель Note
+
+# id 1052636
+мелаксен Medication
+мелаксен Medication
+таблетки Medication
+для облегчения засыпания и адаптации Disease
+эффективное Disease
+мелаксен Medication
+мелаксен Medication
+мелаксена Medication
+мелаксена Medication
+помог наладить сон Disease
+отлично высыпаться стала Disease
+вставала утром бодрой Disease
+эффективное Disease
+
+# id 1066525
+валерианы экстракт Medication
+экстракт Medication
+борисовский завод медицинских препаратов Medication
+помогут успокоить нервную систему Disease
+снимут стресс Disease
+стресс Disease
+экстракт Medication
+экстракт валерианы Medication
+повышенной нервной возбудимости Disease
+бессоннице Disease
+умеренный эффект Disease
+эффективно Disease
+расстройстве психики Disease
+взаимодействует с другими лекарствами и усиливает действие снотворных и спазмолитиков Note
+снотворных Medication
+спазмолитиков Medication
+выписывают Medication
+таблеток Medication
+экстракт Medication
+экстракт валерианы Medication
+состояние становится спокойным и стабильным Disease
+валериана Medication
+назначению врача Medication
+таблеточки Medication
+борисовский завод медицинских препаратов Medication
+4 года Medication
+помогут успокоить нервную систему Disease
+снимут стресс Disease
+стресс Disease
+
+# id 1068061
+свечи Medication
+ректальные Medication
+виферон Medication
+150000 ме Medication
+температура Disease
+насморк Disease
+кашель Disease
+врача , прописала Medication
+свечи Medication
+виферон Medication
+после применения Note
+свечей Medication
+понос ADR
+вставила Medication
+свечку Medication
+понос ADR
+надо было делать прививку Note
+прививку Medication
+прописываю Medication
+свечи Medication
+виферона Medication
+свечи Medication
+прививки Medication
+выставляю Medication
+понос ADR
+врачи Medication
+врачи мне не поверили Note
+врача Medication
+вставила Medication
+свечку Medication
+понос ADR
+аллергия ADR
+пьем Medication
+прививками Medication
+анаферон Medication
+
+# id 1071769
+мелаксен Medication
+мелаксен Medication
+таблетки Medication
+для облегчения засыпания и адаптации Disease
+часа 4 нормального сна Note
+просыпалась раза 4-5 Disease
+не особенно помогает Note
+чувство сдавленности в почках ADR
+болей ADR
+сдавленностей в почках ADR
+часа 4 нормального сна Note
+
+# id 1085889
+ринзасип с витамином с Medication
+порошке Medication
+для растворения Medication
+не помог Disease
+гриппом Disease
+ринзасип с витамином с Medication
+пила по одной пачке разведенной кипяченной водой Medication
+три раза в день Medication
+пила Medication
+три дня Medication
+ринзосип Medication
+не помог Disease
+простудные симптомы Disease
+врачу Medication
+антибиотики Medication
+ринзосип Medication
+не рекомендую Note
+ринзосип Medication
+не помог Disease
+
+# id 1099655
+противовирусный Medication
+амизон Medication
+все же что-то есть Note
+чихал Disease
+с носа лилось Disease
+чихал Disease
+чихал Disease
+болеть голова Disease
+таблеток Medication
+амизон Medication
+выпил Medication
+хуже стало Disease
+почувствовал облегчение Disease
+одну Medication
+выпил Medication
+как будто и не болел Disease
+таблеток Medication
+амизон Medication
+амизон - хороший препарат Disease
+все же что-то есть Note
+
+# id 1099993
+свечи Medication
+ректальные Medication
+виферон Medication
+виферон Medication
+150000 ме Medication
+с первых дней жизни Note
+простудные Disease
+простыла Disease
+температура Disease
+сопельки Disease
+педиатру порекомендовал Medication
+свечи Medication
+виферон Medication
+виферон Medication
+150000 ме Medication
+свечи Medication
+ректально Medication
+2 раза в день Medication
+5 дней Medication
+свечи Medication
+температурка Disease
+температурка спала Disease
+свечки Medication
+простуды Disease
+виферон Medication
+виферон Medication
+перед применением обязательно проконсультируйтесь со своим лечащим врачом Note
+1 год Medication
+с первых дней жизни Note
+
+# id 1105026
+пантогам Medication
+пантогам Medication
+ребенок стал возбужденным Note
+возбужденным ADR
+невролога Medication
+прописала Medication
+пантогам Medication
+пантогам Medication
+для лучшей мозговой деятельности Disease
+пантогам Medication
+пантогам Medication
+орать ADR
+капризничать ADR
+не спать по ночам ADR
+побочные эффекты этого лекарства Note
+не рекомендую и не советую Note
+пантогам Medication
+пантогам Medication
+вам его прописали прочитайте хорошо аннотацию прежде чем его давать Note
+ребенок стал возбужденным Note
+возбужденным ADR
+
+# id 1105045
+таблетки Medication
+внешторг фарма Medication
+экстракт Medication
+пустырник Medication
+не эффективен Disease
+стрессы Disease
+таблетки Medication
+внешторг фарма Medication
+экстракт Medication
+пустырник Medication
+чтобы успокоить свои нервы Disease
+пила Medication
+по две таблетки Medication
+таблетки Medication
+три раза в день Medication
+двух недель Medication
+результатов я не видела Disease
+таблетки Medication
+внешторг фарма Medication
+экстракт Medication
+пустырник Medication
+успокоительное Medication
+не понравился Disease
+абсолютно никакого эффекта Disease
+не рекомендую Note
+успокоительное Medication
+не эффективен Disease
+
+# id 1283883
+противовирусный Medication
+ингавирин Medication
+ингавирин Medication
+капсулы Medication
+пропил Medication
+несколько дней Medication
+и его забрала скорая с жуткой аллергией Disease
+аллергией ADR
+ни когда не было аллергии Note
+аллергии ADR
+это не первый случай Note
+сезонно пропивайте специальные витамины для повышения имунитета Note
+
+# id 1342894
+таблетки Medication
+гомеопатические Medication
+анаферон детский Medication
+не помог Disease
+доктора Medication
+анаферон Medication
+врач Medication
+пить Medication
+чисто вспомогательное средство и как основное лечение его использовать бесполезно Note
+никакого эффекта Disease
+доктору Medication
+не помог Disease
+анаферон Medication
+что с ним болели , что без него одинаково Disease
+2 недели Medication
+не помог Disease
+
+# id 1108216
+галичфарм Medication
+седавит Medication
+седавит Medication
+седавит Medication
+седавит Medication
+седавит только для людей Note
+стрессы Disease
+валерьянкой Medication
+успокоительном Medication
+ветом посоветовала Medication
+успок. Medication
+седавит Medication
+седавит Medication
+4 неделю Medication
+на стол . ложечку воды капаем Medication
+5 капелек Medication
+результат прекрасный Disease
+собака гораздо спокойней Disease
+стала реально спокойной Disease
+советую Note
+успокоительное Medication
+седавит Medication
+седавит Medication
+седавит только для людей Note
+
+# id 1126055
+противовирусный Medication
+иммунотропный Medication
+экофарм Medication
+протефлазид Medication
+протефлазид Medication
+не пойму был ли эффект Note
+врачу Medication
+выписала Medication
+иммуномодулятор Medication
+три месяца Medication
+пока его пили все равно болели Disease
+пили Medication
+по истечению трех месяцев , малая стала не так часто болеть Disease
+орви Disease
+протефлазид Medication
+протефлазид Medication
+не совсем помог Note
+эффекта нет Disease
+не пойму был ли эффект Note
+
+# id 1128478
+ноотропное Medication
+ucb pharma s.a. Medication
+ноотропил Medication
+ноотропил Medication
+хороший Disease
+действует не сразу Note
+пропивала Medication
+ноотропил Medication
+ноотропил Medication
+выписал врач невролог Medication
+всд Disease
+ноотропов Medication
+месяц Medication
+две таблетки Medication
+таблетки Medication
+в день , утро и в обед Medication
+по началу эффектов не было Note
+ушло небольшое головокружение Disease
+головокружение Disease
+в голове появилась `` ясность Disease
+новых возможностей мозга я не ощутила Note
+1 месяц Medication
+хороший Disease
+действует не сразу Note
+
+# id 1132809
+оксолиновая мазь Medication
+мазь Medication
+vishpha Medication
+эффективная Disease
+противовирусная Medication
+мазь Medication
+профилактические Disease
+мазью Medication
+мазать Medication
+оксолинкой Medication
+мазь Medication
+помогает Disease
+в носу немного печет ADR
+чувство заложенности ADR
+через время это проходит Note
+мази Medication
+мазь Medication
+профилактику Disease
+рекомендую Note
+противовирусной Medication
+мазью Medication
+8 лет Medication
+эффективная Disease
+противовирусная Medication
+мазь Medication

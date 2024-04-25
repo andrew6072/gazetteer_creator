@@ -1,0 +1,75 @@
+association football club | Q476028
+musical group | Q215380
+ice hockey team | Q4498974
+basketball team | Q13393265
+political party | Q7278
+association football team | Q15944511
+organization | Q43229
+rock band | Q5741069
+nonprofit organization | Q163740
+sports club | Q847017
+association football venue | Q1154710
+multisports club | Q13580678
+American football team | Q17156793
+armed forces sports club | Q4792966
+women's association football club | Q51481377
+charitable organization | Q708676
+political organization | Q7210356
+professional sports team | Q20639856
+paramilitary organization | Q207320
+volleyball team | Q15720476
+posyolok | Q2514025
+musical duo | Q9212979
+educational organization | Q5341295
+creative union of the Soviet Union | Q5183590
+rugby union club | Q43009164
+party conference | Q2288051
+art group | Q4502119
+communist party | Q233591
+defunct association football club | Q94579592
+political party in Bulgaria | Q43791339
+armed organization | Q17149090
+writers union | Q12057459
+women's association football team | Q28140340
+men's association football team | Q103229495
+national sports team | Q1194951
+boy band | Q216337
+bandy team | Q69920471
+punk band | Q25391823
+virtual band | Q3736859
+group of stereoisomers | Q59199015
+population group | Q851990
+group | Q16887380
+Special Group | Q7574579
+national rugby union team | Q58840819
+junior national cycling team | Q54555994
+under-23 national cycling team | Q20738667
+elite national cycling team | Q23726798
+auto racing team | Q20074337
+human social group | Q874405
+minority group | Q30103
+group of humans | Q16334295
+advocacy group | Q431603
+pop group | Q2491498
+ethnic group | Q41710
+girl group | Q641066
+commercial organization | Q21980538
+military organization | Q15627509
+human rights organization | Q1920810
+terrorist organization | Q17127659
+international non-governmental organization | Q1194093
+Christian organization | Q94670589
+mixed martial arts organization | Q24040733
+juvenile political organization | Q2493450
+autonomous non-commercial organization | Q4056382
+standards organization | Q1328899
+government organization | Q2659904
+religious organization | Q1530022
+membership organization | Q6815100
+fraternal organization | Q996839
+self-regulatory organization | Q536390
+antispeciesist organization | Q106526300
+anti-doping organization | Q41818119
+Catholic organization | Q23955632
+KVN team | Q98925384
+international association of the faithful | Q118798990

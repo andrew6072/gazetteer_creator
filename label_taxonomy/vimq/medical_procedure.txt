@@ -1,0 +1,22 @@
+medical test | Q2671652
+medical test type | Q55215251
+medical procedure | Q796194
+remedy | Q1595418
+ectomy | Q15636234
+medical treatment | Q179661
+surgical procedure | Q15636229
+surgical operation | Q600236
+periodic health examination | Q1762591
+clinical trial | Q30612
+Artificial reproduction | Q4115658
+surgical procedure type | Q55215846
+long-acting reversible contraception | Q6671830
+contraceptive | Q25473183
+mass drug administration | Q6784028
+electromagnetic radiation | Q12969754
+medical procedure type | Q55214844
+molecular diagnostics | Q16257937
+alternative medical treatment | Q31338769
+execution method | Q15169167
+medical device type | Q44580842
+lab technique | Q3247516
