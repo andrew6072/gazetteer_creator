@@ -3,3 +3,4 @@ bs4
 spacy
 nltk
 tqdm
+openai
