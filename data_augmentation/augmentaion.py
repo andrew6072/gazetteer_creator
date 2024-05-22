@@ -2,8 +2,6 @@ import gzip
 import itertools
 from typing import Generator, List, Optional, Tuple, Dict
 import os
-from utils import parse_args
-from tqdm import tqdm
 import random
 import uuid
 
@@ -88,7 +86,7 @@ def read_files_to_dict(directory: str) -> Dict[str, List[str]]:
     return files_dict
 
 
-def entity_replacement(path_to_gazetteer, path_to_template_file, output_file, number_of_templates):
+def entity_replacement_randomtemplate(path_to_gazetteer, path_to_template_file, output_file, number_of_templates):
     gazetteer_dict = read_files_to_dict(path_to_gazetteer)
     templates = get_template_list(path_to_template_file)
     with open(output_file, "w", encoding="utf-8") as writer:
@@ -99,19 +97,19 @@ def entity_replacement(path_to_gazetteer, path_to_template_file, output_file, nu
             writer.write('\n')
 
 
+def entity_replacement_alltemplate(path_to_gazetteer, path_to_template_file, output_file):
+    gazetteer_dict = read_files_to_dict(path_to_gazetteer)
+    templates = get_template_list(path_to_template_file)
+    with open(output_file, "w", encoding="utf-8") as writer:
+        for template in templates:
+            res = replacement_1_template(gazetteer_dict, template)
+            for field in res:
+                writer.write(field + '\n')
+            writer.write('\n')
+
+
 if __name__ == "__main__":
-    # templates = get_template_list("create_template/output/vimq_sample_template.txt")
-    # for field in templates[0]:
-    #     print(field)
-    # print()
-    # gazetteer_dict = read_files_to_dict('gazetteers/vimq')
-
-    # res = replacement_1_template(gazetteer_dict, templates[0])
-
-    # for field in res:
-    #     print(field)
-    # print()
-    entity_replacement("gazetteers/vimq", "create_template/output/vimq_template.txt", "./test1.txt", 10000)
-
-
-    
+    template_file = "data_augmentation/create_template/output/vimq_template.txt"
+    gazetteer_directory = "gazetteers/gzt_vimq"
+    output_file = "./test1.txt"
+    entity_replacement_alltemplate(gazetteer_directory, template_file, output_file)
